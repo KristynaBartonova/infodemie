@@ -112,3 +112,44 @@ const questions = [
     ],
   },
 ];
+
+const data = [
+  {
+    question: 'Kolik je 2 + 2?',
+    answers: {
+      a: '4',
+      b: '22',
+    },
+    correctAnswer: 'a',
+  },
+  {
+    question: 'Jak se dneska máte?',
+    answers: {
+      a: 'Dobře',
+      b: 'Chce to vínko',
+      c: 'Jde to',
+      d: 'Úžasně',
+    },
+    correctAnswer: 'b',
+  },
+  {
+    question: 'Kolik je 33*3?',
+    answrs: {
+      a: 'To nemám páru',
+      b: '99',
+      c: '333',
+      d: 'Hvězdička',
+    },
+    correctAnswer: 'b',
+  },
+  {
+    question: 'Kolik je 4 * 2?',
+    answrs: {
+      a: '6',
+      b: '8',
+      c: '12',
+      d: '5',
+    },
+    correctAnswer: 'b',
+  },
+];
