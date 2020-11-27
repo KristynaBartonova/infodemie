@@ -1,18 +1,15 @@
+//const definované a vytažené skrze getElementById//
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 
+//priprava fce - chci aby se mi měnili otázky a zároveň chci vědět, na jakém i otázka zrovna je // let místo const - aby to mohlo být redefinováno//
 let shuffledQuestions, currentQuestionIndex;
 
-startButton.addEventListener('click', startGame);
-nextButton.addEventListener('click', () => {
-  currentQuestionIndex++;
-  setNextQuestion();
-});
-
-function startGame() {
+//spusteni hry//
+startGame = () => {
   startButton.classList.add('hide');
   shuffledQuestions = questions.sort(() => Math.random() - 0.5);
   currentQuestionIndex = 0;
@@ -20,12 +17,21 @@ function startGame() {
   setNextQuestion();
 }
 
-function setNextQuestion() {
+//posluchač události - startButton + anonymní fce na nextButton//
+startButton.addEventListener('click', startGame);
+nextButton.addEventListener('click', () => {
+  currentQuestionIndex++;
+  setNextQuestion();
+});
+
+//nastavení další otázky//
+setNextQuestion = () => {
   resetState();
   showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
-function showQuestion(question) {
+// fce showQuestion, plním//
+showQuestion = (question) => {
   questionElement.innerText = question.question;
   question.answers.forEach((answer) => {
     const button = document.createElement('button');
@@ -38,8 +44,8 @@ function showQuestion(question) {
     answerButtonsElement.appendChild(button);
   });
 }
-
-function resetState() {
+// resetuju stav - aby se mi neukazovaly zbytečné elementy//
+resetState = () => {
   clearStatusClass(document.body);
   nextButton.classList.add('hide');
   while (answerButtonsElement.firstChild) {
@@ -47,7 +53,8 @@ function resetState() {
   }
 }
 
-function selectAnswer(e) {
+//vybrat odpověď, zkontrolovat jestli je správná, natavení NEXT/RESTART//
+selectAnswer = (e) => {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
   setStatusClass(document.body, correct);
@@ -62,7 +69,8 @@ function selectAnswer(e) {
   }
 }
 
-function setStatusClass(element, correct) {
+//přidání tříd pro správnou a špatnou odpověď//
+setStatusClass = (element, correct) => {
   clearStatusClass(element);
   if (correct) {
     element.classList.add('correct');
@@ -71,11 +79,13 @@ function setStatusClass(element, correct) {
   }
 }
 
-function clearStatusClass(element) {
+//odebrat třídu correct/wrong//
+clearStatusClass = (element) => {
   element.classList.remove('correct');
   element.classList.remove('wrong');
 }
 
+//pole objektů//
 const questions = [
   {
     question: 'Kolik je 2 + 2?',
