@@ -3,6 +3,8 @@ const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
+console.log('funguju');
+
 const answerButtonsElement = document.getElementById('answer-buttons');
 
 //priprava fce - chci aby se mi měnili otázky a zároveň chci vědět, na jakém i otázka zrovna je // let místo const - aby to mohlo být redefinováno//
