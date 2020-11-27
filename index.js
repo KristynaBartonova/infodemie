@@ -17,7 +17,7 @@ startGame = () => {
   currentQuestionIndex = 0;
   questionContainerElement.classList.remove('hide');
   setNextQuestion();
-}
+};
 
 //posluchač události - startButton + anonymní fce na nextButton//
 startButton.addEventListener('click', startGame);
@@ -30,7 +30,7 @@ nextButton.addEventListener('click', () => {
 setNextQuestion = () => {
   resetState();
   showQuestion(shuffledQuestions[currentQuestionIndex]);
-}
+};
 
 // fce showQuestion, plním//
 showQuestion = (question) => {
@@ -45,7 +45,7 @@ showQuestion = (question) => {
     button.addEventListener('click', selectAnswer);
     answerButtonsElement.appendChild(button);
   });
-}
+};
 // resetuju stav - aby se mi neukazovaly zbytečné elementy//
 resetState = () => {
   clearStatusClass(document.body);
@@ -53,7 +53,7 @@ resetState = () => {
   while (answerButtonsElement.firstChild) {
     answerButtonsElement.removeChild(answerButtonsElement.firstChild);
   }
-}
+};
 
 //vybrat odpověď, zkontrolovat jestli je správná, natavení NEXT/RESTART//
 selectAnswer = (e) => {
@@ -69,7 +69,7 @@ selectAnswer = (e) => {
     startButton.innerText = 'Restart';
     startButton.classList.remove('hide');
   }
-}
+};
 
 //přidání tříd pro správnou a špatnou odpověď//
 setStatusClass = (element, correct) => {
@@ -79,51 +79,51 @@ setStatusClass = (element, correct) => {
   } else {
     element.classList.add('wrong');
   }
-}
+};
 
 //odebrat třídu correct/wrong//
 clearStatusClass = (element) => {
   element.classList.remove('correct');
   element.classList.remove('wrong');
-}
+};
 
-//pole objektů//
+// //pole objektů//
+// const questions = [
+//   {
+//     question: 'Kolik je 2 + 2?',
+//     answers: [
+//       { text: '4', correct: true },
+//       { text: '22', correct: false },
+//     ],
+//   },
+//   {
+//     question: 'Jak se dneska máte?',
+//     answers: [
+//       { text: 'Dobře', correct: true },
+//       { text: 'Chce to vínko', correct: true },
+//       { text: 'Jde to', correct: true },
+//       { text: 'Úžasně', correct: true },
+//     ],
+//   },
+//   {
+//     question: 'Kolik je 33*3?',
+//     answers: [
+//       { text: 'To nemám páru', correct: false },
+//       { text: '99', correct: true },
+//       { text: '333', correct: false },
+//       { text: 'Hvězdička', correct: false },
+//     ],
+//   },
+//   {
+//     question: 'Kolik je 4 * 2?',
+//     answers: [
+//       { text: '6', correct: false },
+//       { text: '8', correct: true },
+//     ],
+//   },
+// ];
+
 const questions = [
-  {
-    question: 'Kolik je 2 + 2?',
-    answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false },
-    ],
-  },
-  {
-    question: 'Jak se dneska máte?',
-    answers: [
-      { text: 'Dobře', correct: true },
-      { text: 'Chce to vínko', correct: true },
-      { text: 'Jde to', correct: true },
-      { text: 'Úžasně', correct: true },
-    ],
-  },
-  {
-    question: 'Kolik je 33*3?',
-    answers: [
-      { text: 'To nemám páru', correct: false },
-      { text: '99', correct: true },
-      { text: '333', correct: false },
-      { text: 'Hvězdička', correct: false },
-    ],
-  },
-  {
-    question: 'Kolik je 4 * 2?',
-    answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true },
-    ],
-  },
-];
-
-const data = [
   {
     question: 'Kolik je 2 + 2?',
     answers: {
