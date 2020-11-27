@@ -88,78 +88,78 @@ clearStatusClass = (element) => {
 };
 
 // //pole objektů//
-// const questions = [
-//   {
-//     question: 'Kolik je 2 + 2?',
-//     answers: [
-//       { text: '4', correct: true },
-//       { text: '22', correct: false },
-//     ],
-//   },
-//   {
-//     question: 'Jak se dneska máte?',
-//     answers: [
-//       { text: 'Dobře', correct: true },
-//       { text: 'Chce to vínko', correct: true },
-//       { text: 'Jde to', correct: true },
-//       { text: 'Úžasně', correct: true },
-//     ],
-//   },
-//   {
-//     question: 'Kolik je 33*3?',
-//     answers: [
-//       { text: 'To nemám páru', correct: false },
-//       { text: '99', correct: true },
-//       { text: '333', correct: false },
-//       { text: 'Hvězdička', correct: false },
-//     ],
-//   },
-//   {
-//     question: 'Kolik je 4 * 2?',
-//     answers: [
-//       { text: '6', correct: false },
-//       { text: '8', correct: true },
-//     ],
-//   },
-// ];
-
 const questions = [
   {
     question: 'Kolik je 2 + 2?',
-    answers: {
-      a: '4',
-      b: '22',
-    },
-    correctAnswer: 'a',
+    answers: [
+      { text: '4', correct: true },
+      { text: '22', correct: false },
+    ],
   },
   {
     question: 'Jak se dneska máte?',
-    answers: {
-      a: 'Dobře',
-      b: 'Chce to vínko',
-      c: 'Jde to',
-      d: 'Úžasně',
-    },
-    correctAnswer: 'b',
+    answers: [
+      { text: 'Dobře', correct: true },
+      { text: 'Chce to vínko', correct: true },
+      { text: 'Jde to', correct: true },
+      { text: 'Úžasně', correct: true },
+    ],
   },
   {
     question: 'Kolik je 33*3?',
-    answrs: {
-      a: 'To nemám páru',
-      b: '99',
-      c: '333',
-      d: 'Hvězdička',
-    },
-    correctAnswer: 'b',
+    answers: [
+      { text: 'To nemám páru', correct: false },
+      { text: '99', correct: true },
+      { text: '333', correct: false },
+      { text: 'Hvězdička', correct: false },
+    ],
   },
   {
     question: 'Kolik je 4 * 2?',
-    answrs: {
-      a: '6',
-      b: '8',
-      c: '12',
-      d: '5',
-    },
-    correctAnswer: 'b',
+    answers: [
+      { text: '6', correct: false },
+      { text: '8', correct: true },
+    ],
   },
 ];
+
+// const questions = [
+//   {
+//     question: 'Kolik je 2 + 2?',
+//     answers: {
+//       a: '4',
+//       b: '22',
+//     },
+//     correctAnswer: 'a',
+//   },
+//   {
+//     question: 'Jak se dneska máte?',
+//     answers: {
+//       a: 'Dobře',
+//       b: 'Chce to vínko',
+//       c: 'Jde to',
+//       d: 'Úžasně',
+//     },
+//     correctAnswer: 'b',
+//   },
+//   {
+//     question: 'Kolik je 33*3?',
+//     answrs: {
+//       a: 'To nemám páru',
+//       b: '99',
+//       c: '333',
+//       d: 'Hvězdička',
+//     },
+//     correctAnswer: 'b',
+//   },
+//   {
+//     question: 'Kolik je 4 * 2?',
+//     answrs: {
+//       a: '6',
+//       b: '8',
+//       c: '12',
+//       d: '5',
+//     },
+//     correctAnswer: 'b',
+//   },
+// ];
