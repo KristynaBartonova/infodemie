@@ -2,6 +2,8 @@ const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
+console.log('funguju');
+
 const answerButtonsElement = document.getElementById('answer-buttons');
 
 let shuffledQuestions, currentQuestionIndex;
