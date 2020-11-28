@@ -3,58 +3,104 @@
 console.log('funguju');
 // TADY je JSON a uložená data - otázky a odpovědi - bude následně v samostatném dokumentu data.json
 
-const data = { [
-  // fakeNews
-   [
-    {
-      question: 'Mám ráda zeleninu?',
-      answers: ['Ano', 'Ne'],
-      indexOfCorrect: 0,
-    },
-    {
-      question: 'Bude dneska pršet?',
-      answers: ['Ano', 'Ne'],
-      indexOfCorrect: 1,
-    }
-  ]
-  // internet
-   [
-    {
-      question: 'Jak se dneska máte?',
-      answers: ['Dobrý', 'Nicmoc', 'Nefunguje mi kód', 'Skvělý'],
-      indexOfCorrect: 2,
-    },
-    {
-      question: 'Jak se dneska máte?',
-      answers: ['Paráda', 'Jde to', 'Dře to', 'Nejde to'],
-      indexOfCorrect: 3
-    },
-    {
-      question: 'Jak se dneska máte?',
-      answers: ['Dobrý', 'Chce to vínko', 'Jde to', 'Úžasně'],
-      indexOfCorrect: 0,
-    }
-  ]
-  // hoax: 
-  [
-    {
-      question: 'Jak se dneska máte?',
-      answers: ['Chce to vínko', 'Dobře', 'Jde to, ale dřeto', 'Úžasně'],
-      indexOfCorrect: 3,
-    },
-    {
-      question: 'Kolik je 33*3?',
-      answers: ['99', 'To nemám páru', '333', 'Hvězdička'],
-      indexOfCorrect: 1,
-    },
-    {
-      question: 'Kolik je 4 * 2?',
-      answers: ['6', '8', '1', '5'],
-      indexOfCorrect: 1,
-    }
-  ]
-]
-
+const JSONdata = [
+  {
+    id: 0,
+    topic: 'Fake news',
+    questions: [
+      {
+        id: 0,
+        question: 'Is the fakenews really fakenews?',
+        answers: [
+          {
+            id: 0,
+            answer: 'Yes',
+          },
+          {
+            id: 1,
+            answer: 'No',
+          },
+          {
+            id: 2,
+            answer: 'lol',
+          },
+        ],
+        correctAnswer: 0,
+      },
+      {
+        id: 1,
+        question: 'Kolik je 4 * 2?',
+        answers: [
+          {
+            id: 0,
+            answer: '6',
+          },
+          {
+            id: 1,
+            answer: '8',
+          },
+          {
+            id: 2,
+            answer: '1',
+          },
+          {
+            id: 3,
+            answer: '5',
+          },
+        ],
+        correctAnswer: 1,
+      },
+    ],
+  },
+  {
+    id: 1,
+    topic: 'Hoax',
+    questions: [
+      {
+        id: 0,
+        question: 'Hoax lol wtf omg',
+        answers: [
+          {
+            id: 0,
+            answer: 'Yes',
+          },
+          {
+            id: 1,
+            answer: 'No',
+          },
+          {
+            id: 2,
+            answer: 'lol',
+          },
+        ],
+        correctAnswer: 0,
+      },
+      {
+        id: 1,
+        question: 'Kolik je 666 * 1?',
+        answers: [
+          {
+            id: 0,
+            answer: '1',
+          },
+          {
+            id: 1,
+            answer: '2',
+          },
+          {
+            id: 2,
+            answer: '3',
+          },
+          {
+            id: 3,
+            answer: '666',
+          },
+        ],
+        correctAnswer: 3,
+      },
+    ],
+  },
+];
 
 //const definované a vytažené skrze getElementById//
 
@@ -76,10 +122,10 @@ let correct = 0;
 
 // vygeneruje otázku z datasetu
 
-const generate = () => {
-  questionElement.innerHTML = JSONdata.[].question;
-  answersElement.innerHTML = JSONdata.[].answers;
-};
+// const generate = () => {
+//   questionElement.innerHTML = JSONdata.[].question;
+//   answersElement.innerHTML = JSONdata.[].answers;
+// };
 
 // mělo by projít všechny tři sekce
 JSONdata.forEach(generate());
