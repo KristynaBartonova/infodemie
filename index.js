@@ -169,13 +169,16 @@ data = [
 
 // uložení otázek do proměnné
 
-
 // Added by ZS - end
 const questionsSetString = JSON.stringify(data);
 const questionsSet = JSON.parse(questionsSetString);
 // Added by ZS - end
 
 data.questionsSet = Question(questionsSet.question);
+
+const questionsSet = JSON.parse(data);
+
+data.questionsSet = question(questionsSet.question);
 
 questionContainerElement.innerHTML =
   questionsSet.question + questionsSet.answer;
