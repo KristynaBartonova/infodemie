@@ -127,43 +127,88 @@ console.log('funguju');
 
 data = [
   {
-    question: 'Kolik je 2 + 2?',
-    answers: {
-      a: '4',
-      b: '22',
-    },
-    correctAnswer: 'a',
-  },
-
-  {
-    question: 'Jak se dneska máte?',
-    answers: {
-      a: 'Dobře',
-      b: 'Chce to vínko',
-      c: 'Jde to',
-      d: 'Úžasně',
-    },
-    correctAnswer: 'b',
+    fakeNews: [
+      {
+        question: 'Mám ráda zeleninu?',
+        a: 'Ano',
+        b: 'Ne',
+        answer: 'a',
+      },
+      {
+        question: 'Bude dneska pršet?',
+        a: 'Ano',
+        b: 'Ne',
+        answer: 'b',
+      },
+    ],
   },
   {
-    question: 'Kolik je 33*3?',
-    answers: {
-      a: 'To nemám páru',
-      b: '99',
-      c: '333',
-      d: 'Hvězdička',
-    },
-    correctAnswer: 'b',
+    internet: [
+      {
+        question: 'Jak se dneska máte?',
+        answers: {
+          a: 'Dobře',
+          b: 'Chce to vínko',
+          c: 'Jde to',
+          d: 'Úžasně',
+        },
+        correctAnswer: 'b',
+      },
+      {
+        question: 'Jak se dneska máte?',
+        answers: {
+          a: 'a',
+          b: 't',
+          c: 'f',
+          d: 'g',
+        },
+        correctAnswer: 'c',
+      },
+      {
+        question: 'Jak se dneska máte?',
+        answers: {
+          a: 'Dobrý',
+          b: 'Chce to vínko',
+          c: 'Jde to',
+          d: 'Úžasně',
+        },
+        correctAnswer: 'd',
+      },
+    ],
   },
   {
-    question: 'Kolik je 4 * 2?',
-    answers: {
-      a: '6',
-      b: '8',
-      c: '12',
-      d: '5',
-    },
-    correctAnswer: 'b',
+    hoax: [
+      {
+        question: 'Jak se dneska máte?',
+        answers: {
+          a: 'Dobře',
+          b: 'Chce to vínko',
+          c: 'Jde to, ale dřeto',
+          d: 'Úžasně',
+        },
+        correctAnswer: 'c',
+      },
+      {
+        question: 'Kolik je 33*3?',
+        answers: {
+          a: 'To nemám páru',
+          b: '99',
+          c: '333',
+          d: 'Hvězdička',
+        },
+        correctAnswer: 'b',
+      },
+      {
+        question: 'Kolik je 4 * 2?',
+        answers: {
+          a: '6',
+          b: '8',
+          c: '12',
+          d: '5',
+        },
+        correctAnswer: 'b',
+      },
+    ],
   },
 ];
 
@@ -174,9 +219,9 @@ const questionsSetString = JSON.stringify(data);
 const questionsSet = JSON.parse(questionsSetString);
 // Added by ZS - end
 
-data.questionsSet = Question(questionsSet.question);
+data.questionsSet = question(questionsSet.question);
 
-const questionsSet = JSON.parse(data);
+// const questionsSet = JSON.parse(data);
 
 data.questionsSet = question(questionsSet.question);
 
@@ -194,4 +239,11 @@ startGame = () => {
 
   // proměnná, která bude kontrolovat odpovědi
   const correctAnswers = [];
+};
+
+startButton.classList.add('hide');
+  shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+  currentQuestionIndex = 0;
+  questionContainerElement.classList.remove('hide');
+  setNextQuestion();
 };
