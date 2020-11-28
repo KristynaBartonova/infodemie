@@ -1,10 +1,46 @@
 {
     "data": [
         {
-            "qustion": "this is question no. 1"
+            "fakeNews": [
+                {
+                    "question": "Is the fakenews really fakenews?",
+                    "answers": ["Yes", "No"],
+                    "indexOfCorrect": 1
+                },
+                {
+                    "question": "How many fakenews you ready a day?",
+                    "answers": [27, 43, 75, 116],
+                    "indexOfCorrect": 2
+                }
+            ]
         },
         {
-            "qustion": "this is question no. 2"
+            "internet": [
+                {
+                    "question": "Is the internet really internet?",
+                    "answers": ["Yes", "No"],
+                    "indexOfCorrect": 1
+                },
+                {
+                    "question": "How many internet you ready a day?",
+                    "answers": [27, 43, 75, 116],
+                    "indexOfCorrect": 2
+                }
+            ]
+        },
+        {
+            "hoax": [
+                {
+                    "question": "Is the hoax really hoax?",
+                    "answers": ["Yes", "No"],
+                    "indexOfCorrect": 1
+                },
+                {
+                    "question": "How many hoax you ready a day?",
+                    "answers": [27, 43, 75, 116],
+                    "indexOfCorrect": 2
+                }
+            ]
         }
     ]
 }
