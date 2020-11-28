@@ -5,14 +5,6 @@
   font-family: Roboto;
 }
 
-#intro {
-  text-align: center;
-  background-color: white;
-  color: black;
-  font-size: 40px;
-  letter-spacing: -1px;
-}
-
 .main {
   justify-content: center;
   align-items: center;
@@ -28,6 +20,17 @@
   font-size: 18px;
   font-weight: 800;
   border-radius: 5px;
+}
+
+/* Nadpis, který js změni */
+
+#intro { /* tohle je nadpis - bude se měnit dle js*/
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  letter-spacing: -1px;
+  padding:20px;
+  margin:20px;
 }
 
 /* tady začíná js*/
@@ -113,6 +116,9 @@ body.wrong {
   display: none;
 }
 
+/* tady končí css k js */
+/* tady začíná body css */
+
 .computer {
   width: 15vmin;
   height: 15vmin;
@@ -120,17 +126,39 @@ body.wrong {
 
 header {
   width:100%;
+  background-color:
 }
 
-.card {
-  width: 80%;
-  padding:15px;
+.sticky-top{
+  background-color:#8CC3B3;
+}
+
+.card-group {
   margin:20px;
 }
 
+@media only screen and (max-width: 480px) {
+  .card-group {
+    display:none;
+  }
+}
+
+.card {
+  padding:15px;
+  margin: 20px;
+}
+
+.formDiv {
+  background-color: #8CC3B3;
+}
+
 form {
-  width: 90%;
   padding:10px;
   margin:10px;
-  background-color: lightblue;
+}
+
+.hra {
+  background-image:url(img/computer.svg);
+  image-rendering: auto;
+  object-fit: contain;
 }

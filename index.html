@@ -10,8 +10,8 @@
 
 </head>
 <body>
-  <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <header class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="index.html"><img src="img/infodemie.svg" alt="Infodemie"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -34,14 +34,14 @@
     </div>
   </nav>
 </header>
+<h2 id="intro">Nenecháte se NAPÁLIT?</h2>
 <div class="hra">
-  <img class="computer" src="img/computer.svg" alt="computer">
+  <!-- <img class="computer" src="img/computer.svg" alt="computer"> -->
  <div class="main" > 
-    <h2 id="intro">Nenecháte se NAPÁLIT?</h2>
 	<div id = "question-container" class="container">
 		<div id ="question">Question</div>
 		<div id="answer-buttons" class ="btn-grid"> 
-		  <!-- 	<button class="btn">Answer 1</button>
+		  <!-- 	<button class="btn">Answer 1</button> -->
 			<!-- <button class="btn">Answer 2</button> -->
 			<!-- <button class="btn">Answer 3</button> -->
       <!-- <button class="btn">Answer 4</button>  -->
@@ -57,7 +57,7 @@
 <!-- the qiuz ends the other senction begins -->
 <div class="card-group">
   <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+    <img class="img" src="img/icon.svg" class="card-img-top" alt="">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -65,7 +65,7 @@
     </div>
   </div>
   <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+    <img class="img" src="img/icon.svg" class="card-img-top" alt="">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, architecto. Sit placeat nisi aliquid tempore nemo ab ad sed soluta!</p>
@@ -73,7 +73,7 @@
     </div>
   </div>
   <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+    <img class="img" src="img/icon.svg" class="card-img-top" alt="">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quidem, incidunt ullam nemo expedita adipisci cum alias laborum vitae corrupti aut amet. Accusamus veritatis ut non error nemo debitis earum!</p>
@@ -86,6 +86,7 @@
   </div>
 </div>
 <!-- Section ends  + Form Begins -->
+<div class="col-12 formDiv">
 <form>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
@@ -102,6 +103,14 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+</div>
+<!-- form ends -->
+<!-- footer begins -->
+<div>
+  <footer></footer>
+</div>
+<!-- footer ends -->
+<!-- js src here -->
 <script src="index.js"></script>
 
 </body>
