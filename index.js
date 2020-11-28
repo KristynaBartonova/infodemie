@@ -1,3 +1,4 @@
+'use strict';
 
 console.log('funguju');
 
@@ -8,7 +9,6 @@ const startButton = document.getElementById('start-btn');
 
 // další krok v otázkách
 const nextButton = document.getElementById('next-btn');
-
 
 // celý kontejner, kde se mají zobrazovat javascriptové otázky - div, který obaluje všechny ostatní ID questionContainerElement
 const quizContainer = document.getElementById('questioan-container');
@@ -23,24 +23,25 @@ const answerButtonsElement = document.getElementById('answer-buttons');
 // //spusteni hry//
 // startGame = () => {
 //   startButton.classList.add('hide');
-//   shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+//   shuffledQuestions = data.question.sort(() => Math.random() - 0.5);
 //   currentQuestionIndex = 0;
-//   questionContainerElement.classList.remove('hide');
+//   quizContainer.classList.remove('hide');
 //   setNextQuestion();
+//   return console.log('hra se spustí, co teď? Spíš se hra nespustí :D');
 // };
 
 // //posluchač události - startButton + anonymní fce na nextButton//
-startButton.addEventListener('click', startGame);
-nextButton.addEventListener('click', () => {
-  currentQuestionIndex++;
-  setNextQuestion();
-});
+// startButton.addEventListener('click', startGame);
+// nextButton.addEventListener('click', () => {
+//   currentQuestionIndex++;
+//   setNextQuestion();
+// });
 
 //nastavení další otázky//
-setNextQuestion = () => {
-  resetState();
-  showQuestion(shuffledQuestions[currentQuestionIndex]);
-};
+// setNextQuestion = () => {
+//   resetState();
+//   showQuestion(shuffledQuestions[currentQuestionIndex]);
+// };
 
 // // fce showQuestion, plním//
 // showQuestion = (question) => {
@@ -92,10 +93,10 @@ setNextQuestion = () => {
 // };
 
 //odebrat třídu correct/wrong//
-clearStatusClass = (element) => {
-  element.classList.remove('correct');
-  element.classList.remove('wrong');
-};
+// clearStatusClass = (element) => {
+//   element.classList.remove('correct');
+//   element.classList.remove('wrong');
+// };
 
 // // //pole objektů//
 // const questions = [
@@ -231,8 +232,6 @@ const questionsSet = JSON.parse(questionsSetString);
 
 // const questionsSet = JSON.parse(data);
 
-
-
 data.questionsSet = question(questionsSet.question);
 
 questionContainerElement.innerHTML =
@@ -250,9 +249,6 @@ startGame = () => {
   // proměnná, která bude zaznamenávat odpovědi
   const correctAnswers = [];
 
-// proměnná, kam se budou zaznamenávat odpovědi uživatele, když na něco klikne
-const userAnswer = 
-
-
+  // proměnná, kam se budou zaznamenávat odpovědi uživatele, když na něco klikne
+  const userAnswer = [];
 };
-
