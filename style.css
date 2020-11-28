@@ -26,10 +26,11 @@
 
 #intro { /* tohle je nadpis - bude se měnit dle js*/
   text-align: center;
-  background-color: white;
   color: black;
   font-size: 40px;
   letter-spacing: -1px;
+  padding:20px;
+  margin:20px;
 }
 
 /* tady začíná js*/
@@ -154,4 +155,10 @@ header {
 form {
   padding:10px;
   margin:10px;
+}
+
+.hra {
+  background-image:url(img/computer.svg);
+  image-rendering: auto;
+  object-fit: contain;
 }
