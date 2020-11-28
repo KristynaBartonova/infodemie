@@ -119,17 +119,12 @@ body.wrong {
 /* tady končí css k js */
 /* tady začíná body css */
 
-.computer {
-  width: 15vmin;
-  height: 15vmin;
-}
-
 header {
   width:100%;
   background-color:
 }
 
-.sticky-top{
+.sticky-top {
   background-color:#8CC3B3;
 }
 
@@ -160,5 +155,6 @@ form {
 .hra {
   background-image:url(img/computer.svg);
   image-rendering: auto;
-  object-fit: contain;
+  background-size:contain;
+  background-repeat: no-repeat;
 }
