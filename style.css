@@ -44,8 +44,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
   justify-content: center;
   align-items: center;
   background-color: hsl(var(--hue), 100%, 20%);
@@ -120,3 +118,6 @@ body.wrong {
   height: 15vmin;
 }
 
+header {
+  width: 100%;
+}
