@@ -120,10 +120,34 @@ let i = 0;
 
 let correct = 0;
 
+const numberOfTopics = JSONdata.length - 1;
 
-const actualQuestion = 
+let actualQuestion = {
+  topicId: 0,
+  questionId: 0,
+};
 
-// hledání otázek a odpovědí z tý struktury
+let userAnswers = [];
+
+const changeQuestion = () => {
+  const topic = JSONdata.find((topic) => topic.id === actualQuestion.topicId);
+
+  if (actualQuestion.topicId < numberOfTopics) {
+    if (actualQuestion.questionId < topic.questions.length - 1) {
+      actualQuestion.questionId++;
+    } else {
+      actualQuestion.topicId++;
+      actualQuestion.questionId = 0;
+    }
+
+    console.log(actualQuestion.topicId, actualQuestion.questionId);
+    generate(actualQuestion);
+  } else {
+    console.log(userAnswers);
+    alert("all topics are done");
+  }
+};
+// hledání otázek a odpovědí z JSON struktury
 
 const generate = (actualQuestion) => {
   const topic = JSONdata.find((topic) => topic.id === actualQuestion.topicId);
@@ -134,11 +158,11 @@ const generate = (actualQuestion) => {
 
   question.answers.forEach((answer) => {
     const button = document.createElement('button');
+    button.classList.add('btn');
     button.innerHTML = answer.answer;
     answersElement.appendChild(button);
   });
 };
-
 generate(actualQuestion);
 
 // mělo by projít všechny tři sekce
@@ -167,4 +191,4 @@ JSONdata.forEach(checkAnswer());
 
 // data od uživatele se mi budou ukládat sem, mohlo by to být prázdné pole, ale protože máme určité sekce je třeba to mít lépe definováno
 
-const userAnswers = { fakeNews: [], internet: [], hoax: [] };
+const userAnswers = { topic.id [], internet: [], hoax: [] };
