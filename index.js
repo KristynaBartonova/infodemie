@@ -136,92 +136,86 @@ const answerButtonsElement = document.getElementById('answer-buttons');
 
 // TADY je JSON a uložená data - otázky a odpovědi
 
-data = [
-  {
-    fakeNews: [
-      {
-        question: 'Mám ráda zeleninu?',
-        a: 'Ano',
-        b: 'Ne',
-        answer: 'a',
+const data = {
+  fakeNews: [
+    {
+      question: 'Mám ráda zeleninu?',
+      a: 'Ano',
+      b: 'Ne',
+      answer: 'a',
+    },
+    {
+      question: 'Bude dneska pršet?',
+      a: 'Ano',
+      b: 'Ne',
+      answer: 'b',
+    },
+  ],
+  internet: [
+    {
+      question: 'Jak se dneska máte?',
+      answers: {
+        a: 'Dobře',
+        b: 'Chce to vínko',
+        c: 'Jde to',
+        d: 'Úžasně',
       },
-      {
-        question: 'Bude dneska pršet?',
-        a: 'Ano',
-        b: 'Ne',
-        answer: 'b',
+      correctAnswer: 'b',
+    },
+    {
+      question: 'Jak se dneska máte?',
+      answers: {
+        a: 'a',
+        b: 't',
+        c: 'f',
+        d: 'g',
       },
-    ],
-  },
-  {
-    internet: [
-      {
-        question: 'Jak se dneska máte?',
-        answers: {
-          a: 'Dobře',
-          b: 'Chce to vínko',
-          c: 'Jde to',
-          d: 'Úžasně',
-        },
-        correctAnswer: 'b',
+      correctAnswer: 'c',
+    },
+    {
+      question: 'Jak se dneska máte?',
+      answers: {
+        a: 'Dobrý',
+        b: 'Chce to vínko',
+        c: 'Jde to',
+        d: 'Úžasně',
       },
-      {
-        question: 'Jak se dneska máte?',
-        answers: {
-          a: 'a',
-          b: 't',
-          c: 'f',
-          d: 'g',
-        },
-        correctAnswer: 'c',
+      correctAnswer: 'd',
+    },
+  ],
+  hoax: [
+    {
+      question: 'Jak se dneska máte?',
+      answers: {
+        a: 'Dobře',
+        b: 'Chce to vínko',
+        c: 'Jde to, ale dřeto',
+        d: 'Úžasně',
       },
-      {
-        question: 'Jak se dneska máte?',
-        answers: {
-          a: 'Dobrý',
-          b: 'Chce to vínko',
-          c: 'Jde to',
-          d: 'Úžasně',
-        },
-        correctAnswer: 'd',
+      correctAnswer: 'c',
+    },
+    {
+      question: 'Kolik je 33*3?',
+      answers: {
+        a: 'To nemám páru',
+        b: '99',
+        c: '333',
+        d: 'Hvězdička',
       },
-    ],
-  },
-  {
-    hoax: [
-      {
-        question: 'Jak se dneska máte?',
-        answers: {
-          a: 'Dobře',
-          b: 'Chce to vínko',
-          c: 'Jde to, ale dřeto',
-          d: 'Úžasně',
-        },
-        correctAnswer: 'c',
+      correctAnswer: 'b',
+    },
+    {
+      question: 'Kolik je 4 * 2?',
+      answers: {
+        a: '6',
+        b: '8',
+        c: '12',
+        d: '5',
       },
-      {
-        question: 'Kolik je 33*3?',
-        answers: {
-          a: 'To nemám páru',
-          b: '99',
-          c: '333',
-          d: 'Hvězdička',
-        },
-        correctAnswer: 'b',
-      },
-      {
-        question: 'Kolik je 4 * 2?',
-        answers: {
-          a: '6',
-          b: '8',
-          c: '12',
-          d: '5',
-        },
-        correctAnswer: 'b',
-      },
-    ],
-  },
-];
+      correctAnswer: 'b',
+    },
+  ],
+};
 
 // uložení otázek do proměnné
 
@@ -232,19 +226,13 @@ const questionsSet = JSON.parse(questionsSetString);
 
 // const questionsSet = JSON.parse(data);
 
-data.questionsSet = question(questionsSet.question);
+// data.questionsSet = question(questionsSet.question);
 
-questionContainerElement.innerHTML =
-  questionsSet.question + questionsSet.answer;
+// quizContainer.innerHTML = questionsSet.question[] + questionsSet.answer[];
 
-// začátek hry - celá funkce
-startGame = () => {
-  // tady by měl začít kvíz
-
-  startQuize = () => {
-    // proměnná pro vložení HTML výstupu
-    const output = [];
-  };
+startQuize = () => {
+  // proměnná pro vložení HTML výstupu
+  const output = [];
 
   // proměnná, která bude zaznamenávat odpovědi
   const correctAnswers = [];
