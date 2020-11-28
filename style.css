@@ -5,7 +5,7 @@
   font-family: Roboto;
 }
 
-.main {
+/* .main {
   justify-content: center;
   align-items: center;
   padding-bottom: 100px;
@@ -14,7 +14,7 @@
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-}
+} */
 
 .badge {
   font-size: 18px;
@@ -156,5 +156,8 @@ form {
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
+  padding-bottom: 60px;
+  margin-top: 60px;
+  width: 70vmin;
 }
 
