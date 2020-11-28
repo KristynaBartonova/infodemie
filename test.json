@@ -4,37 +4,13 @@
             "fakeNews": [
                 {
                     "question": "Is the fakenews really fakenews?",
-                    "answers": [
-                        {
-                            "label": "Yes",
-                            "correct": false
-                        },
-                        {
-                            "label": "No",
-                            "correct": true
-                        }
-                    ]
+                    "answers": ["Yes", "No"],
+                    "indexOfCorrect": 1
                 },
                 {
                     "question": "How many fakenews you ready a day?",
-                    "answers": [
-                        {
-                            "label": 27,
-                            "correct": false
-                        },
-                        {
-                            "label": 43,
-                            "correct": true
-                        },
-                        {
-                            "label": 75,
-                            "correct": false
-                        },
-                        {
-                            "label": 116,
-                            "correct": false
-                        }
-                    ]
+                    "answers": [27, 43, 75, 116],
+                    "indexOfCorrect": 2
                 }
             ]
         },
@@ -42,37 +18,13 @@
             "internet": [
                 {
                     "question": "Is the internet really internet?",
-                    "answers": [
-                        {
-                            "label": "Yes",
-                            "correct": false
-                        },
-                        {
-                            "label": "No",
-                            "correct": true
-                        }
-                    ]
+                    "answers": ["Yes", "No"],
+                    "indexOfCorrect": 1
                 },
                 {
                     "question": "How many internet you ready a day?",
-                    "answers": [
-                        {
-                            "label": 27,
-                            "correct": false
-                        },
-                        {
-                            "label": 43,
-                            "correct": true
-                        },
-                        {
-                            "label": 75,
-                            "correct": false
-                        },
-                        {
-                            "label": 116,
-                            "correct": false
-                        }
-                    ]
+                    "answers": [27, 43, 75, 116],
+                    "indexOfCorrect": 2
                 }
             ]
         },
@@ -80,37 +32,13 @@
             "hoax": [
                 {
                     "question": "Is the hoax really hoax?",
-                    "answers": [
-                        {
-                            "label": "Yes",
-                            "correct": false
-                        },
-                        {
-                            "label": "No",
-                            "correct": true
-                        }
-                    ]
+                    "answers": ["Yes", "No"],
+                    "indexOfCorrect": 1
                 },
                 {
                     "question": "How many hoax you ready a day?",
-                    "answers": [
-                        {
-                            "label": 27,
-                            "correct": false
-                        },
-                        {
-                            "label": 43,
-                            "correct": true
-                        },
-                        {
-                            "label": 75,
-                            "correct": false
-                        },
-                        {
-                            "label": 116,
-                            "correct": false
-                        }
-                    ]
+                    "answers": [27, 43, 75, 116],
+                    "indexOfCorrect": 2
                 }
             ]
         }
