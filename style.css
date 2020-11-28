@@ -17,7 +17,7 @@ body {
 }
 
 .sticky-top {
-  background-color:#8CC3B3;
+  background-color:hsl(163, 31%, 79%);
 }
 
 
@@ -123,7 +123,7 @@ body.wrong {
 }
 
 .formDiv {
-  background-color: #8CC3B3;
+  background-color:hsl(163, 31%, 79%);
 }
 
 form {
@@ -163,7 +163,7 @@ form {
 #question {
 color:black;
 font-weight: 1.5rem;
-text-align: center;
+ text-align: center;
 }
 
 /* MEDIA QUERY */
