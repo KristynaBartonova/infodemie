@@ -5,40 +5,6 @@
   font-family: Roboto;
 }
 
-/* .main {
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 100px;
-  width: 70vmin;
-  margin-top: 60px;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-} */
-
-.badge {
-  font-size: 18px;
-  font-weight: 800;
-  border-radius: 5px;
-}
-
-/* Nadpis, který js změni */
-#intro { 
-  text-align: center;
-  color:white;
-  font-size: 40px;
-  letter-spacing: -1px;
-  padding:20px;
-  margin:20px;
-}
-
-/* tady začíná js*/
-:root {
-  --hue-neutral: 200;
-  --hue-wrong: 0;
-  --hue-correct: 145;
-}
-
 body {
   --hue: var(--hue-neutral);
   padding: 0;
@@ -47,7 +13,36 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: hsl(var(--hue), 100%, 20%);
+  background-color: hsl(var(--hue), 100%, 40%);
+}
+
+.sticky-top {
+  background-color:#8CC3B3;
+}
+
+
+
+/* Nadpis, který js změni */
+.badge {
+  font-size: 18px;
+  font-weight: 800;
+  border-radius: 5px;
+}
+
+#intro { 
+  text-align: center;
+  color:white;
+  font-size: 40px;
+  letter-spacing: -1px;
+  margin-top:20px;
+  margin-bottom:0px;
+}
+
+/* tady začíná js*/
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
 }
 
 body.correct {
@@ -59,10 +54,10 @@ body.wrong {
 }
 
 .container {
-  max-width: 70%;
   background-color: transparent;
   border-radius: 5px;
   padding: 10px;
+  margin-top:20px;
   box-shadow: 0 0 10px 2px;
 }
 
@@ -116,15 +111,10 @@ body.wrong {
 /* tady končí css k js */
 /* tady začíná body css */
 
-header {
-  width:100%;
-}
-.sticky-top {
-  background-color:#8CC3B3;
-}
-
 .card-group {
-  margin:20px;
+  margin:10px;
+  padding-top:-50px;
+  padding-bottom: 40px;
 }
 
 .card {
@@ -147,6 +137,7 @@ form {
   justify-content: center;
 }
 
+/* kontejner main, který v sobě má js kvíz */
 .main {
   display:flex;
   background-image:url(img/cmp.svg);
@@ -156,16 +147,23 @@ form {
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
-  padding-bottom: 60px;
-  margin-top: 10px;
+  margin-top: -200px;
   height: 60rem;
   width: 70rem;
 }
 
+#question-container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  max-width:40%;
+  padding-bottom: 60px;
+}
+
 #question {
-  color:white;
-  font-weight: 1.5rem;
- text-align: center;
+color:black;
+font-weight: 1.5rem;
+text-align: center;
 }
 
 /* MEDIA QUERY */
@@ -176,11 +174,7 @@ form {
     display:none;
   }
   .main{
-    width: 45rem;
-    height: 60rem;
-    background-image:url(img/mobil.svg);
-    background-size:100% 80%;
-    margin:0px;
+  
   }
 
   .container {
@@ -190,11 +184,5 @@ form {
   }
 }
 
-/*  */
-@media only screen and (min-width: 960px) {
-  .hra {
-    width:100rem;
-    height: auto;
-  }
-}
+
 
