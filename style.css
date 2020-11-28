@@ -23,10 +23,9 @@
 }
 
 /* Nadpis, který js změni */
-
-#intro { /* tohle je nadpis - bude se měnit dle js*/
+#intro { 
   text-align: center;
-  color: black;
+  color:white;
   font-size: 40px;
   letter-spacing: -1px;
   padding:20px;
@@ -119,20 +118,15 @@ body.wrong {
 /* tady končí css k js */
 /* tady začíná body css */
 
+header {
+  width:100%;
+}
 .sticky-top {
   background-color:#8CC3B3;
-  width:100%;
 }
 
 .card-group {
   margin:20px;
-}
-
-/* Skupina caret mizí  */
-@media only screen and (max-width: 480px) {
-  .card-group {
-    display:none;
-  }
 }
 
 .card {
@@ -150,14 +144,60 @@ form {
 }
 
 .hra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display:flex;
   background-image:url(img/computer.svg);
+  max-width: 80%;
   image-rendering: auto;
-  background-size:contain;
+  background-size:100% 100%;
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
   padding-bottom: 60px;
   margin-top: 60px;
-  width: 70vmin;
+  height: 40rem;
+  width: 40rem;
+}
+
+#question {
+  color:white;
+  font-weight: 1.5rem;
+ text-align: center;
+}
+
+/* MEDIA QUERY */
+
+/* mobilní telefon */
+@media only screen and (max-width: 600px) {
+  .card-group {
+    display:none;
+  }
+  .main {
+    display:flex;
+    background-image:url(img/mobil.svg);
+    max-width: 100%;
+    image-rendering: auto;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+    margin-top: 60px;
+    height: 40rem;
+    width: 40rem;
+  }
+}
+
+/*  */
+@media only screen and (min-width: 960px) {
+  .hra {
+    width:100rem;
+    height: auto;
+  }
 }
 
