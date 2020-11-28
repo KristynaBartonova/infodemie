@@ -114,3 +114,9 @@ body.wrong {
 .hide {
   display: none;
 }
+
+.computer {
+  width: 15vmin;
+  height: 15vmin;
+}
+
