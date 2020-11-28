@@ -1,11 +1,21 @@
-//const definované a vytažené skrze getElementById//
-const startButton = document.getElementById('start-btn');
-const nextButton = document.getElementById('next-btn');
-const questionContainerElement = document.getElementById('question-container');
-const questionElement = document.getElementById('question');
+'use strict';
+
 console.log('funguju');
 
-// const answerButtonsElement = document.getElementById('answer-buttons');
+//const definované a vytažené skrze getElementById//
+
+// spouštěcí button
+const startButton = document.getElementById('start-btn');
+
+// další krok v otázkách
+const nextButton = document.getElementById('next-btn');
+
+// celý kontejner, kde se mají zobrazovat javascriptové otázky - div, který obaluje všechny ostatní ID questionContainerElement
+const quizContainer = document.getElementById('questioan-container');
+// div vypisující otázky - následně změníme na h2
+const questionElement = document.getElementById('question');
+// odpovědi se vypisují do button  answerButtonsElement
+const answerButtonsElement = document.getElementById('answer-buttons');
 
 //priprava fce - chci aby se mi měnili otázky a zároveň chci vědět, na jakém i otázka zrovna je // let místo const - aby to mohlo být redefinováno//
 // let shuffledQuestions, currentQuestionIndex;
@@ -13,10 +23,11 @@ console.log('funguju');
 // //spusteni hry//
 // startGame = () => {
 //   startButton.classList.add('hide');
-//   shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+//   shuffledQuestions = data.question.sort(() => Math.random() - 0.5);
 //   currentQuestionIndex = 0;
-//   questionContainerElement.classList.remove('hide');
+//   quizContainer.classList.remove('hide');
 //   setNextQuestion();
+//   return console.log('hra se spustí, co teď? Spíš se hra nespustí :D');
 // };
 
 // //posluchač události - startButton + anonymní fce na nextButton//
@@ -26,7 +37,7 @@ console.log('funguju');
 //   setNextQuestion();
 // });
 
-// //nastavení další otázky//
+//nastavení další otázky//
 // setNextQuestion = () => {
 //   resetState();
 //   showQuestion(shuffledQuestions[currentQuestionIndex]);
@@ -81,7 +92,7 @@ console.log('funguju');
 //   }
 // };
 
-// //odebrat třídu correct/wrong//
+//odebrat třídu correct/wrong//
 // clearStatusClass = (element) => {
 //   element.classList.remove('correct');
 //   element.classList.remove('wrong');
@@ -219,8 +230,6 @@ const questionsSetString = JSON.stringify(data);
 const questionsSet = JSON.parse(questionsSetString);
 // Added by ZS - end
 
-data.questionsSet = question(questionsSet.question);
-
 // const questionsSet = JSON.parse(data);
 
 data.questionsSet = question(questionsSet.question);
@@ -237,13 +246,9 @@ startGame = () => {
     const output = [];
   };
 
-  // proměnná, která bude kontrolovat odpovědi
+  // proměnná, která bude zaznamenávat odpovědi
   const correctAnswers = [];
-};
 
-startButton.classList.add('hide');
-  shuffledQuestions = questions.sort(() => Math.random() - 0.5);
-  currentQuestionIndex = 0;
-  questionContainerElement.classList.remove('hide');
-  setNextQuestion();
+  // proměnná, kam se budou zaznamenávat odpovědi uživatele, když na něco klikne
+  const userAnswer = [];
 };
