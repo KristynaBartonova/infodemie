@@ -1,1 +1,10 @@
-data = '[{"name" : "Ashwin", "age" : "20"},{"name" : "Abhinandan", "age" : "20"}]';
+{
+    "data": [
+        {
+            "qustion": "this is question no. 1"
+        },
+        {
+            "qustion": "this is question no. 2"
+        }
+    ]
+}
