@@ -45,7 +45,6 @@ body {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: hsl(var(--hue), 100%, 20%);
@@ -60,8 +59,7 @@ body.wrong {
 }
 
 .container {
-  width: 800px;
-  max-width: 80%;
+  max-width: 70%;
   background-color: transparent;
   border-radius: 5px;
   padding: 10px;
@@ -152,7 +150,7 @@ form {
 .main {
   display:flex;
   background-image:url(img/computer.svg);
-  max-width: 80%;
+  width: 100%;
   image-rendering: auto;
   background-size:100% 100%;
   background-repeat: no-repeat;
@@ -177,20 +175,16 @@ form {
   .card-group {
     display:none;
   }
-  .main {
-    display:flex;
+  .main{
+    width: 100%;
     background-image:url(img/mobil.svg);
-    max-width: 100%;
-    image-rendering: auto;
     background-size:100% 100%;
-    background-repeat: no-repeat;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 60px;
-    margin-top: 60px;
-    height: 40rem;
-    width: 40rem;
   }
+  .container {
+    max-width: 50%;
+    max-height: initial;
+  }
+
 }
 
 /*  */
