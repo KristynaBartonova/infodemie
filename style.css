@@ -149,7 +149,7 @@ form {
 
 .main {
   display:flex;
-  background-image:url(img/monitor.svg);
+  background-image:url(img/cmp.svg);
   width: 100%;
   image-rendering: auto;
   background-size:100% 100%;
