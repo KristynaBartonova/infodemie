@@ -1,10 +1,118 @@
 {
     "data": [
         {
-            "qustion": "this is question no. 1"
+            "fakeNews": [
+                {
+                    "question": "Is the fakenews really fakenews?",
+                    "answers": [
+                        {
+                            "label": "Yes",
+                            "correct": false
+                        },
+                        {
+                            "label": "No",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "How many fakenews you ready a day?",
+                    "answers": [
+                        {
+                            "label": 27,
+                            "correct": false
+                        },
+                        {
+                            "label": 43,
+                            "correct": true
+                        },
+                        {
+                            "label": 75,
+                            "correct": false
+                        },
+                        {
+                            "label": 116,
+                            "correct": false
+                        }
+                    ]
+                }
+            ]
         },
         {
-            "qustion": "this is question no. 2"
+            "internet": [
+                {
+                    "question": "Is the internet really internet?",
+                    "answers": [
+                        {
+                            "label": "Yes",
+                            "correct": false
+                        },
+                        {
+                            "label": "No",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "How many internet you ready a day?",
+                    "answers": [
+                        {
+                            "label": 27,
+                            "correct": false
+                        },
+                        {
+                            "label": 43,
+                            "correct": true
+                        },
+                        {
+                            "label": 75,
+                            "correct": false
+                        },
+                        {
+                            "label": 116,
+                            "correct": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "hoax": [
+                {
+                    "question": "Is the hoax really hoax?",
+                    "answers": [
+                        {
+                            "label": "Yes",
+                            "correct": false
+                        },
+                        {
+                            "label": "No",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "How many hoax you ready a day?",
+                    "answers": [
+                        {
+                            "label": 27,
+                            "correct": false
+                        },
+                        {
+                            "label": 43,
+                            "correct": true
+                        },
+                        {
+                            "label": 75,
+                            "correct": false
+                        },
+                        {
+                            "label": 116,
+                            "correct": false
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
