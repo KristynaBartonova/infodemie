@@ -120,15 +120,29 @@ let i = 0;
 
 let correct = 0;
 
-// vygeneruje otázku z datasetu
 
-// const generate = () => {
-//   questionElement.innerHTML = JSONdata.[].question;
-//   answersElement.innerHTML = JSONdata.[].answers;
-// };
+const actualQuestion = 
+
+// hledání otázek a odpovědí z tý struktury
+
+const generate = (actualQuestion) => {
+  const topic = JSONdata.find((topic) => topic.id === actualQuestion.topicId);
+  const question = topic.questions.find(
+    (question) => question.id === actualQuestion.questionId,
+  );
+  questionElement.innerHTML = question.question;
+
+  question.answers.forEach((answer) => {
+    const button = document.createElement('button');
+    button.innerHTML = answer.answer;
+    answersElement.appendChild(button);
+  });
+};
+
+generate(actualQuestion);
 
 // mělo by projít všechny tři sekce
-JSONdata.forEach(generate());
+// JSONdata.forEach(generate());
 
 // funkce kontroluje správnost otázky - zakliknutý button zkontroluje s daty z JSONU - momentálně nefunguje, je třeba předělat na novou data strukturu
 
