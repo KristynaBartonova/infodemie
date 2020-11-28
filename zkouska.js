@@ -1,88 +1,62 @@
 'use strict';
 
 console.log('funguju');
-// TADY je JSON a uložená data - otázky a odpovědi
+// TADY je JSON a uložená data - otázky a odpovědi - bude následně v samostatném dokumentu data.json
 
-const JSONdata = {
-  fakeNews: [
+const data = { [
+  // fakeNews
+   [
     {
       question: 'Mám ráda zeleninu?',
-      a: 'Ano',
-      b: 'Ne',
-      answer: 'a',
+      answers: ['Ano', 'Ne'],
+      indexOfCorrect: 0,
     },
     {
       question: 'Bude dneska pršet?',
-      a: 'Ano',
-      b: 'Ne',
-      answer: 'b',
-    },
-  ],
-  internet: [
+      answers: ['Ano', 'Ne'],
+      indexOfCorrect: 1,
+    }
+  ]
+  // internet
+   [
     {
       question: 'Jak se dneska máte?',
-      answers: {
-        a: 'Dobře',
-        b: 'Chce to vínko',
-        c: 'Jde to',
-        d: 'Úžasně',
-      },
-      correctAnswer: 'b',
+      answers: ['Dobrý', 'Nicmoc', 'Nefunguje mi kód', 'Skvělý'],
+      indexOfCorrect: 2,
     },
     {
       question: 'Jak se dneska máte?',
-      answers: {
-        a: 'a',
-        b: 't',
-        c: 'f',
-        d: 'g',
-      },
-      correctAnswer: 'c',
+      answers: ['Paráda', 'Jde to', 'Dře to', 'Nejde to'],
+      indexOfCorrect: 3
     },
     {
       question: 'Jak se dneska máte?',
-      answers: {
-        a: 'Dobrý',
-        b: 'Chce to vínko',
-        c: 'Jde to',
-        d: 'Úžasně',
-      },
-      correctAnswer: 'd',
-    },
-  ],
-  hoax: [
+      answers: ['Dobrý', 'Chce to vínko', 'Jde to', 'Úžasně'],
+      indexOfCorrect: 0,
+    }
+  ]
+  // hoax: 
+  [
     {
       question: 'Jak se dneska máte?',
-      answers: {
-        a: 'Dobře',
-        b: 'Chce to vínko',
-        c: 'Jde to, ale dřeto',
-        d: 'Úžasně',
-      },
-      correctAnswer: 'c',
+      answers: ['Chce to vínko', 'Dobře', 'Jde to, ale dřeto', 'Úžasně'],
+      indexOfCorrect: 3,
     },
     {
       question: 'Kolik je 33*3?',
-      answers: {
-        a: 'To nemám páru',
-        b: '99',
-        c: '333',
-        d: 'Hvězdička',
-      },
-      correctAnswer: 'b',
+      answers: ['99', 'To nemám páru', '333', 'Hvězdička'],
+      indexOfCorrect: 1,
     },
     {
       question: 'Kolik je 4 * 2?',
-      answers: {
-        a: '6',
-        b: '8',
-        c: '12',
-        d: '5',
-      },
-      correctAnswer: 'b',
-    },
-  ],
-};
+      answers: ['6', '8', '1', '5'],
+      indexOfCorrect: 1,
+    }
+  ]
+]
+
+
+//const definované a vytažené skrze getElementById//
 
 const answersElement = document.getElementById('answer-buttons');
 
@@ -102,15 +76,15 @@ let correct = 0;
 
 // vygeneruje otázku z datasetu
 
-const generate = (index) => {
-  questionElement.innerHTML = JSONdata[index].question;
-  answersElement.innerHTML = JSONdata[index].answers;
+const generate = () => {
+  questionElement.innerHTML = JSONdata.[].question;
+  answersElement.innerHTML = JSONdata.[].answers;
 };
 
 // mělo by projít všechny tři sekce
 JSONdata.forEach(generate());
 
-// funkce kontroluje správnost otázky - zakliknutý button zkontroluje s daty z JSONU
+// funkce kontroluje správnost otázky - zakliknutý button zkontroluje s daty z JSONU - momentálně nefunguje, je třeba předělat na novou data strukturu
 
 const checkAnswer = () => {
   if (
@@ -129,4 +103,8 @@ const checkAnswer = () => {
   generate(i);
 };
 
-data.forEach(checkAnswer());
+JSONdata.forEach(checkAnswer());
+
+// data od uživatele se mi budou ukládat sem, mohlo by to být prázdné pole, ale protože máme určité sekce je třeba to mít lépe definováno
+
+const userAnswers = { fakeNews: [], internet: [], hoax: [] };
