@@ -125,69 +125,66 @@ console.log('funguju');
 
 // TADY je JSON a uložená data - otázky a odpovědi
 
- data = [
+data = [
   {
-    "question" : "Kolik je 2 + 2?",
-    "answers" : {
-      "a" : "4",
-      "b" : "22"
-},
-    "correctAnswer": "a",
+    question: 'Kolik je 2 + 2?',
+    answers: {
+      a: '4',
+      b: '22',
+    },
+    correctAnswer: 'a',
   },
 
   {
-    "question": "Jak se dneska máte?",
-    "answers": {
-      "a": "Dobře",
-      "b": "Chce to vínko",
-      "c": "Jde to",
-      "d": "Úžasně",
+    question: 'Jak se dneska máte?',
+    answers: {
+      a: 'Dobře',
+      b: 'Chce to vínko',
+      c: 'Jde to',
+      d: 'Úžasně',
     },
-    "correctAnswer": "b",
+    correctAnswer: 'b',
   },
   {
-    "question": "Kolik je 33*3?",
-    "answers": {
-      "a": "To nemám páru",
-      "b": "99",
-      "c": "333",
-      "d": "Hvězdička",
+    question: 'Kolik je 33*3?',
+    answers: {
+      a: 'To nemám páru',
+      b: '99',
+      c: '333',
+      d: 'Hvězdička',
     },
-    "correctAnswer": "b",
+    correctAnswer: 'b',
   },
   {
-    "question": "Kolik je 4 * 2?",
-    "answers": {
-      "a": "6",
-      "b": "8",
-      "c": "12",
-      "d": "5",
+    question: 'Kolik je 4 * 2?',
+    answers: {
+      a: '6',
+      b: '8',
+      c: '12',
+      d: '5',
     },
-    "correctAnswer": "b",
+    correctAnswer: 'b',
   },
 ];
 
+// uložení otázek do proměnné
 
- // uložení otázek do proměnné 
+const questionsSet = JSON.parse(data);
 
-const questionsSet = JSON.parse(data)
+data.questionsSet = Question(questionsSet.question);
 
-data.questionsSet = Question(questionsSet.question)
-
-
-questionContainerElement.innerHTML = questionsSet.question + questionsSet.answer; 
+questionContainerElement.innerHTML =
+  questionsSet.question + questionsSet.answer;
 
 // začátek hry - celá funkce
- startGame = () => {
-
-  // tady by měl začít kvíz 
+startGame = () => {
+  // tady by měl začít kvíz
 
   startQuize = () => {
-  // proměnná pro vložení HTML výstupu
-  const output = []
-  }
+    // proměnná pro vložení HTML výstupu
+    const output = [];
+  };
 
-// proměnná, která bude kontrolovat odpovědi
-  const correctAnswers = []
-
- 
+  // proměnná, která bude kontrolovat odpovědi
+  const correctAnswers = [];
+};
