@@ -19,7 +19,7 @@ const bundleSass = () => {
         .pipe(minifyCss())
         .pipe(sourceMaps.write())
         .pipe(concat('style.css'))
-        .pipe(dest('./css/'));
+        .pipe(dest('./build/'));
 }
 
 exports.bundleSass = bundleSass;
