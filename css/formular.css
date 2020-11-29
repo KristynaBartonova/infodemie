@@ -1,0 +1,17 @@
+/* Formulář */
+
+.formDiv {
+  background-color: hsl(163, 31%, 79%);
+}
+
+form {
+  padding: 10px;
+  margin: 10px;
+}
+
+/* FORM */
+#exampleInputMessage {
+  height:6rem;
+  text-align:top;
+}
+

@@ -60,7 +60,7 @@ body.wrong {
 }
 
 .score {
-color: green;
+  color: green;
 }
 
 .final-btn:link,
@@ -87,7 +87,7 @@ color: green;
 .btn {
   --hue: var(--hue-neutral);
   border: 1px solid hsl(var(--hue), 100%, 30%);
-  background-color: hsl(var(--hue), 100%, 50%);
+  background-color: green;
   border-radius: 5px;
   padding: 5px 10px;
   color: white;
@@ -109,6 +109,7 @@ color: green;
 
 .start-btn,
 .next-btn {
+  background-color: brown;
   font-size: 1.5rem;
   font-weight: bold;
   padding: 10px 20px;
@@ -203,11 +204,16 @@ form {
 }
 
 #question-container {
+  flex-direction: row;
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 40%;
   padding-bottom: 60px;
+}
+#question-container.p {
+  display: inline-block;
 }
 
 #question {
@@ -218,8 +224,8 @@ form {
 
 /* FORM */
 #exampleInputMessage {
-  height:6rem;
-  text-align:top;
+  height: 6rem;
+  text-align: top;
 }
 
 /* MEDIA QUERY */
@@ -238,10 +244,3 @@ form {
     width: contain;
   }
 }
-<<<<<<< HEAD
-=======
-
-
-
-
->>>>>>> f9d08cb26914ae3b673f00220779aace0fd7592f
