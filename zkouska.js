@@ -204,7 +204,8 @@ let userAnswers = JSONdata.map((topic) => ({
   correctAnswers: 0,
 }));
 
-// tohle nakonci vypisuje projité odpovědi a řekne uživateli správné výsledky. Chtělo by to přidat další DOM elementy, možná přidat pop up, do kterého to zapíše. Chtělo by to následně přidat do DOM elementu i odkaz. Je potřeba ještě vygooglit. Možná vyřešit v POPUPU
+// tohle nakonci vypisuje projité odpovědi a řekne uživateli správné výsledky.
+//  Chtělo by to přidat další DOM elementy, možná přidat pop up, do kterého to zapíše. Chtělo by to následně přidat do DOM elementu i odkaz. Je potřeba ještě vygooglit. Možná vyřešit v POPUPU
 const printResults = () => {
   const box = document.getElementById('question-container');
   box.innerHTML = '';
@@ -215,7 +216,7 @@ const printResults = () => {
     const topic = JSONdata.find((topic) => topic.id === userAnswer.topicId);
     // vytvářím si odstavec, do kterého následně vypíšu téma
     const score = document.createElement('p');
-    score.innerHTML = `V tématu ${topic.topic} jste získali následující počet bodů: ${userAnswer.correctAnswers}. Přečtěte si více informací o tématu.`;
+    score.innerHTML += FinalButton;
     score.style.color = 'green';
     // paragraf se přidá
     box.append(score);
@@ -288,4 +289,11 @@ const generate = (actualQuestion) => {
 
     answersElement.appendChild(button);
   });
+};
+
+const FinalButton = () => {
+  return `
+  <p>V tématu ${topic.topic} jste získali následující počet bodů: ${userAnswer.correctAnswers}.</p>
+  <button class="final-btn"><a href="${props.topic}">Více Informací o tématu<a/></button>
+    `;
 };
