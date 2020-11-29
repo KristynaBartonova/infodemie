@@ -1,6 +1,4 @@
 'use strict'
 
-let mail = document.getElementById('exampleInputEmail1').value
-let message = document.getElementById('exampleInputMessage').value
-
-
+let Mail = document.getElementById('exampleInputEmail1')
+let Message = document.getElementById('exampleInputMessage')
