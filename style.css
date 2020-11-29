@@ -59,6 +59,10 @@ body.wrong {
   box-shadow: 0 0 10px 2px;
 }
 
+.score {
+color: green;
+}
+
 .btn-grid {
   display: grid;
   grid-template-columns: repeat(2, auto);

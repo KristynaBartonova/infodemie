@@ -214,10 +214,11 @@ const printResults = () => {
   userAnswers.forEach((userAnswer) => {
     // prochází téma v JSONU - téma by se mělo rovnat uživatelské odpovědi tématu
     const topic = JSONdata.find((topic) => topic.id === userAnswer.topicId);
+    questionElement.textContent = 'Zvládli jste to';
     // vytvářím si odstavec, do kterého následně vypíšu téma
     const score = document.createElement('p');
-    score.innerHTML += FinalButton;
-    score.style.color = 'green';
+    score.classList.add('score');
+    score.innerHTML = ` V tématu ${topic.topic} jste získali následující počet bodů: ${userAnswer.correctAnswers}`;
     // paragraf se přidá
     box.append(score);
   });
@@ -291,9 +292,12 @@ const generate = (actualQuestion) => {
   });
 };
 
+// const FinalButton = `
+//   <a class="final-btn" type="button" href="${props.topic}">Více Informací o tématu<a/> `;
+
 const FinalButton = () => {
   return `
   <p>V tématu ${topic.topic} jste získali následující počet bodů: ${userAnswer.correctAnswers}.</p>
-  <button class="final-btn"><a href="${props.topic}">Více Informací o tématu<a/></button>
+  <a class="final-btn" href="${topic}">Více Informací o tématu<a/>
     `;
 };
