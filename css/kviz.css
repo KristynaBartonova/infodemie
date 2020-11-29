@@ -1,0 +1,54 @@
+/* .main - obrázek  */
+.main {
+  display:flex;
+  background-image: url('img/finalcomp.svg');
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  height: 30rem;
+  width: 40rem;
+}
+
+#intro {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  letter-spacing: -1px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+
+.hra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* container - quiz */
+.container {
+  display:flex;
+  flex-grow:0;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px 2px;
+}
+
+#question-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 40%;
+  padding-bottom: 30px;
+}
+
+#question {
+  color: black;
+  font-weight: 1.5rem;
+  text-align: center;
+}

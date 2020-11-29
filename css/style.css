@@ -1,0 +1,104 @@
+/* tady začíná js*/
+.score {
+color: green;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 100%, 50%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  border-color: black;
+}
+
+.btn.correct {
+  --hue: var(--hue-correct);
+  color: black;
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.start-btn,
+.next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  animation-name: animaceStartBtn;
+  animation-duration: 5s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes animaceStartBtn {
+  2%,
+  18% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  4%,
+  16% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  6%,
+  10%,
+  14% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  8%,
+  12% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  18.1% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+/* tady končí css k js */
+
+/* MEDIA QUERY */
+
+/* mobilní telefon */
+@media only screen and (max-width: 600px) {
+  .card-group {
+    display: none;
+  }
+  .main{
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: contain;
+  }
+}
