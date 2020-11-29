@@ -218,7 +218,7 @@ const printResults = () => {
     const anchor = document.createElement('a');
     anchor.innerHTML = `Chci vědět víc`;
     anchor.classList.add('final-btn');
-    anchor.href = topic.topic;
+    anchor.href = `${topic.topic}.html`;
     const score = document.createElement('p');
     score.classList.add('score');
     score.innerHTML = ` V tématu ${topic.topic} jste získali následující počet bodů: ${userAnswer.correctAnswers}`;
