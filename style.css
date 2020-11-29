@@ -96,13 +96,14 @@ body.wrong {
   padding: 10px 20px;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
-  animation-name: tres;
+  animation-name: animaceStartBtn;
   animation-duration: 5s;
+  animation-delay: 5s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: ease;
 }
 
-@keyframes tres {
+@keyframes animaceStartBtn {
   2%,
   18% {
     transform: translate3d(-5px, 0, 0);

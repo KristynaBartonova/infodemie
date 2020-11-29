@@ -161,7 +161,7 @@ const JSONdata = [
 
 const answersElement = document.getElementById('answer-buttons');
 const startButton = document.getElementById('start-btn');
-const questionElement = document.getElementById('question');
+const questionElement = document.getElementById('intro');
 const nextButton = document.getElementById('next-btn');
 const quizContainer = document.getElementById('question-container');
 
@@ -174,12 +174,11 @@ const questionsSet = JSON.parse(questionsSetString);
 
 const numberOfTopics = JSONdata.length - 1;
 
-// tady se spouští hra - stejně jako v předchozím kódu bez jsonu - plus je tam přid
+// tady se spouští hra
 
 const startGame = () => {
   startButton.remove();
   generate(actualQuestion);
-  // changeQuestion(); pokud je changeQustion tady tak se nespustí všechny otázky z topicu, ale pouze vždy jedna
   return console.log('hra se spustila');
 };
 
@@ -198,7 +197,7 @@ let actualQuestion = {
 };
 
 // tady se mapují odpovědi uživatele - funkce map prjede odpovědi, které následně porovná se správnými odpověďmi
-// sem se budou zapisovat odpovědi ods uživatele
+// sem se budou zapisovat odpovědi od uživatele
 
 let userAnswers = JSONdata.map((topic) => ({
   topicId: topic.id,
@@ -223,7 +222,7 @@ const printResults = () => {
   });
 };
 
-// tahle funkce mění otázky - ale je v ní nejspíš něco špatně, protože se nezobrazují všechny, které by měli!!!
+// tahle funkce mění otázky
 
 const changeQuestion = () => {
   // vybere téma pomocí funkce find a porovná to s témate aktuálně zvolené otázky
