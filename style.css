@@ -59,30 +59,6 @@ body.wrong {
   box-shadow: 0 0 10px 2px;
 }
 
-.score {
-color: green;
-}
-
-.final-btn:link,
-.final-btn:visited {
-  background-color: #f44336;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.final-btn:hover {
-  background-color: red;
-}
-
-.btn-grid {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 10px;
-  margin: 20px 0;
-}
 
 .btn {
   --hue: var(--hue-neutral);
