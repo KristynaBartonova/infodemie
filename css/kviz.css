@@ -1,0 +1,93 @@
+/* .main - obrázek  */
+.main {
+  display:flex;
+  background-image:url('../img/finalcomp.png');
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  height: 30rem;
+  width: 40rem;
+}
+
+#intro {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  letter-spacing: -1px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+
+.hra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* container - quiz */
+.container {
+  display:flex;
+  flex-grow:0;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px 2px;
+}
+
+#question-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 40%;
+  padding-bottom: 30px;
+}
+
+#question {
+  color: black;
+  font-weight: 1.5rem;
+  text-align: center;
+}
+
+.final-btn:link,
+.final-btn:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.final-btn:hover {
+  background-color: red;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 100%, 50%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  border-color: black;
+}
+
+.score {
+  color: green;
+  }
