@@ -179,7 +179,7 @@ const numberOfTopics = JSONdata.length - 1;
 const startGame = () => {
   startButton.remove();
   generate(actualQuestion);
-  // changeQuestion(); pokud je changeQustion tady tak se nespustí všechny otázky z topicu, ale pouze vždy jedna?
+  // changeQuestion(); pokud je changeQustion tady tak se nespustí všechny otázky z topicu, ale pouze vždy jedna
   return console.log('hra se spustila');
 };
 
@@ -228,9 +228,9 @@ const printResults = () => {
 const changeQuestion = () => {
   // vybere téma pomocí funkce find a porovná to s témate aktuálně zvolené otázky
   const topic = JSONdata.find((topic) => topic.id === actualQuestion.topicId);
-
   // kontroluju, jestli vybrané téma není poslední
   if (actualQuestion.topicId < numberOfTopics) {
+    console.log('not last topic');
     // následně se tady kontroluje, zda i vybraná otázka není poslední
     if (actualQuestion.questionId < topic.questions.length - 1) {
       actualQuestion.questionId++;
@@ -242,8 +242,12 @@ const changeQuestion = () => {
     generate(actualQuestion);
   } else {
     // pokud program dojde na konec vypíše uživatelské odpovědi do konzole, ale také je vypíše na stránky
-    console.log(userAnswers);
-    printResults();
+    if (actualQuestion.questionId < topic.questions.length - 1) {
+      actualQuestion.questionId++;
+      generate(actualQuestion);
+    } else {
+      printResults();
+    }
   }
 };
 
