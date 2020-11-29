@@ -189,13 +189,8 @@ form {
 
 /* kontejner main, který v sobě má js kvíz */
 .main {
-<<<<<<< HEAD
   display: flex;
   background-image: url(img/cmp.svg);
-=======
-  display:flex;
-  background-image:url(img/finalcomp.png);
->>>>>>> f9d08cb26914ae3b673f00220779aace0fd7592f
   width: 100%;
   image-rendering: auto;
   background-size: 100% 100%;
@@ -234,11 +229,7 @@ form {
   .card-group {
     display: none;
   }
-<<<<<<< HEAD
   .main {
-=======
-  .main{
->>>>>>> f9d08cb26914ae3b673f00220779aace0fd7592f
   }
 
   .container {
