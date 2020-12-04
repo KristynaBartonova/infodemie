@@ -1,0 +1,252 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+body {
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--hue), 100%, 40%);
+}
+
+.sticky-top {
+  background-color: #a98b75;
+}
+
+/* Nadpis, který js změni */
+.badge {
+  font-size: 18px;
+  font-weight: 800;
+  border-radius: 5px;
+}
+
+#intro {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  letter-spacing: -1px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+/* tady začíná js*/
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+body.correct {
+  --hue: var(--hue-correct);
+}
+
+body.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.container {
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.score {
+  color: #a98b75;
+}
+
+.final-btn:link,
+.final-btn:visited {
+  background-color: #a98b75;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.final-btn:hover {
+  background-color: #a98b75;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  border: 1px solid #a98b75;
+  background-color: green;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  border-color: black;
+}
+
+.btn.correct {
+  --hue: var(--hue-correct);
+  color: black;
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.start-btn,
+.next-btn {
+  background-color: brown;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  animation-name: animaceStartBtn;
+  animation-duration: 5s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes animaceStartBtn {
+  2%,
+  18% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  4%,
+  16% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  6%,
+  10%,
+  14% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  8%,
+  12% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  18.1% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+/* tady končí css k js */
+
+/* tady začíná css pro zdroje */
+
+.rounded-circle {
+  max-width: width 100px;
+}
+
+/* tady začíná body css */
+
+.card-group {
+  margin: 10px;
+  padding-top: -50px;
+  padding-bottom: 40px;
+}
+
+.card {
+  padding: 15px;
+  margin: 20px;
+}
+
+.formDiv {
+  background-color: hsl(163, 31%, 79%);
+}
+
+form {
+  padding: 10px;
+  margin: 10px;
+}
+
+.hra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* kontejner main, který v sobě má js kvíz */
+.main {
+  display: flex;
+  background-image: url(img/cmp.svg);
+  width: 100%;
+  image-rendering: auto;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  height: 30rem;
+  width: 40rem;
+}
+
+#question-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 40%;
+  padding-bottom: 60px;
+}
+#question-container.p {
+  display: inline-block;
+}
+
+#question {
+  color: black;
+  font-weight: 1.5rem;
+  text-align: center;
+}
+
+/* FORM */
+#exampleInputMessage {
+  height: 6rem;
+  text-align: top;
+}
+
+/* MEDIA QUERY */
+
+/* mobilní telefon */
+@media only screen and (max-width: 600px) {
+  .card-group {
+    display: none;
+  }
+  .main {
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: contain;
+  }
+}

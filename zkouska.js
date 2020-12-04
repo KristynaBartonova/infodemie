@@ -10,7 +10,7 @@ console.log('funguju');
 const JSONdata = [
   {
     id: 0,
-    topic: 'Fake news',
+    topic: 'Fake News',
     questions: [
       {
         id: 0,
@@ -205,7 +205,6 @@ let userAnswers = JSONdata.map((topic) => ({
 }));
 
 // tohle nakonci vypisuje projité odpovědi a řekne uživateli správné výsledky.
-//  Chtělo by to přidat další DOM elementy, možná přidat pop up, do kterého to zapíše. Chtělo by to následně přidat do DOM elementu i odkaz. Je potřeba ještě vygooglit. Možná vyřešit v POPUPU
 const printResults = () => {
   const box = document.getElementById('question-container');
   box.innerHTML = '';
@@ -214,15 +213,16 @@ const printResults = () => {
     // prochází téma v JSONU - téma by se mělo rovnat uživatelské odpovědi tématu
     const topic = JSONdata.find((topic) => topic.id === userAnswer.topicId);
     questionElement.textContent = 'Zvládli jste to';
-    // vytvářím si odstavec, do kterého následně vypíšu téma
+    // vytvářím si buttonový odkaz, který bude vést na všechny tři témata
     const anchor = document.createElement('a');
     anchor.innerHTML = `Chci vědět víc`;
     anchor.classList.add('final-btn');
     anchor.href = `${topic.topic}.html`;
+    // vytvářím si odstavec, který se vypíše na konečné stránce
     const score = document.createElement('p');
     score.classList.add('score');
     score.innerHTML = ` V tématu ${topic.topic} jste získali následující počet bodů: ${userAnswer.correctAnswers}`;
-    // paragraf se přidá
+    // přidá se jak odstavec, tak i buttonový odstavec
     box.append(score, anchor);
   });
 };
@@ -293,14 +293,4 @@ const generate = (actualQuestion) => {
 
     answersElement.appendChild(button);
   });
-};
-
-// const FinalButton = `
-//   <a class="final-btn" type="button" href="${props.topic}">Více Informací o tématu<a/> `;
-
-const FinalButton = () => {
-  return `
-  <p>V tématu ${topic.topic} jste získali následující počet bodů: ${userAnswer.correctAnswers}.</p>
-  <a class="final-btn" href="${topic}">Více Informací o tématu<a/>
-    `;
 };
