@@ -20,13 +20,12 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: hsl(var(--hue), 100%, 40%);
+  background-color: #f9efe9;
 }
 /* header */
 .sticky-top {
-  background-color: hsl(163, 31%, 79%);
+  background-color: #a98b75;
 }
-
 
 /* CARD */
 .card-group {

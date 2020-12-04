@@ -17,7 +17,7 @@ body {
 }
 
 .sticky-top {
-  background-color: hsl(163, 31%, 79%);
+  background-color: #a98b75;
 }
 
 /* Nadpis, který js změni */
@@ -60,12 +60,12 @@ body.wrong {
 }
 
 .score {
-  color: green;
+  color: #a98b75;
 }
 
 .final-btn:link,
 .final-btn:visited {
-  background-color: #f44336;
+  background-color: #a98b75;
   color: white;
   padding: 14px 25px;
   text-align: center;
@@ -74,7 +74,7 @@ body.wrong {
 }
 
 .final-btn:hover {
-  background-color: red;
+  background-color: #a98b75;
 }
 
 .btn-grid {
@@ -85,8 +85,7 @@ body.wrong {
 }
 
 .btn {
-  --hue: var(--hue-neutral);
-  border: 1px solid hsl(var(--hue), 100%, 30%);
+  border: 1px solid #a98b75;
   background-color: green;
   border-radius: 5px;
   padding: 5px 10px;
@@ -160,6 +159,13 @@ body.wrong {
 }
 
 /* tady končí css k js */
+
+/* tady začíná css pro zdroje */
+
+.rounded-circle {
+  max-width: width 100px;
+}
+
 /* tady začíná body css */
 
 .card-group {

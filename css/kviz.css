@@ -1,7 +1,7 @@
 /* .main - obrázek  */
 .main {
-  display:flex;
-  background-image:url('../img/finalcomp.png');
+  display: flex;
+  background-image: url('../img/finalcomp.png');
   width: 100%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@
 
 #intro {
   text-align: center;
-  color: white;
+  color: #787674;
   font-size: 40px;
   letter-spacing: -1px;
   margin-top: 20px;
@@ -23,8 +23,8 @@
 
 /* container - quiz */
 .container {
-  display:flex;
-  flex-grow:0;
+  display: flex;
+  flex-grow: 0;
   background-color: transparent;
   border-radius: 5px;
   padding: 10px;
@@ -77,4 +77,4 @@
 
 .score {
   color: green;
-  }
+}
