@@ -42,16 +42,17 @@
 
 .final-btn:link,
 .final-btn:visited {
-  background-color: #f44336;
+  background-color: #a98b75;
   color: white;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
+  border-radius: 4px;
   display: inline-block;
 }
 
 .final-btn:hover {
-  background-color: red;
+  background-color: #a98b75;
 }
 
 .btn-grid {
