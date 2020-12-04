@@ -1,9 +1,10 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwpijRoD7tRvaGCE4hGshIcQ6m9pOEY3fAwpQt34b-Cglrm5fE/exec'
-const form = document.forms['submit-to-google-sheet']
-
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => console.log('Success!', response))
-    .catch(error => console.error('Error!', error.message))
+fetch("https://api.apispreadsheets.com/data/4630/", {
+    method: "POST",
+    body: JSON.stringify({ "data": { "email": "", "firstName": "", "lastName": "" } }),
+}).then(res => {
+    if (res.status === 201) {
+        console.log("Success");
+    } else {
+        console.log("Error");
+    }
 })
