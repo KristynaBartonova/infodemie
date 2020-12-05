@@ -6,45 +6,125 @@
       "questions": [
         {
           "id": 0,
-          "question": "Is the fakenews really fakenews?",
+          "question": "Co je to Fake News?",
           "answers": [
             {
               "id": 0,
-              "answer": "Yes"
+              "answer": "Podvodná zpráva obsahující dezinformace. Často ji lze snadno zaměnit s důvěryhodnou zprávou ověřených médií."
             },
             {
               "id": 1,
-              "answer": "No"
+              "answer": "Podvodná zpráva, která je vpuštěna do světa, aby satiricky pobavila."
             },
             {
               "id": 2,
-              "answer": "lol"
+              "answer": "Podvodná zpráva, která je používána v médiích především na silvestr a má za úkol sledující a čtenáře pobavit."
+            },
+            {
+              "id": 3,
+              "answer": "Podvodná zpráva, která má odlehčit téma."
             }
           ],
           "correctAnswer": 0
         },
         {
           "id": 1,
-          "question": "Kolik je 4 * 2?",
+          "question": "Je tohle důvěryhodná informace?",
           "answers": [
             {
               "id": 0,
-              "answer": "6"
+              "answer": "Ano"
             },
             {
               "id": 1,
-              "answer": "8"
+              "answer": "Ne."
+            }
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 1,
+          "question": "Co na předchozím obrázku bylo špatně?",
+          "answers": [
+            {
+              "id": 0,
+              "answer": "Byl v pořádku."
             },
             {
-              "id": 2,
-              "answer": "1"
-            },
-            {
-              "id": 3,
-              "answer": "5"
+              "id": 1,
+              "answer": "Url stránky byla nedůvěryhodná"
             }
           ],
           "correctAnswer": 1
+        },
+        {
+          "id": 2,
+          "question": "Kde na Fake News narazíte?",
+          "answers": [
+            {
+              "id": 0,
+              "answer": "Pouze ve spamových e-mailech."
+            },
+            {
+              "id": 1,
+              "answer": "Může se objevit úplně všude dokonce i v televizi."
+            },
+            {
+              "id": 2,
+              "answer": "Na sociálních sítích nebo v e-mailu."
+            },
+            {
+              "id": 3,
+              "answer": "Pouze na nedůvěryhodných webech."
+            }
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 3,
+          "question": "Můžeme se s Fake News setkat i v Česku?",
+          "answers": [
+            {
+              "id": 0,
+              "answer": "Ano, je to běžný jev."
+            },
+            {
+              "id": 1,
+              "answer": "Ne, jedná se o fenomén se kterým má problém jenom USA."
+            },
+            {
+              "id": 2,
+              "answer": "Pouze ojediněle."
+            },
+            {
+              "id": 3,
+              "answer": "Sociální sítě v Česku Fake News blokují, takže se setkáváme pouze s ověřenými informacemi."
+            }
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 4,
+          "question": "Můžeme se s Fake News setkat i v Česku?",
+          "answers": [
+            {
+              "id": 0,
+              "answer": "Ano, je to běžný jev."
+            },
+            {
+              "id": 1,
+              "answer": "Ne, jedná se o fenomén se kterým má problém jenom USA."
+            },
+            {
+              "id": 2,
+              "answer": "Pouze ojediněle."
+            },
+            {
+              "id": 3,
+              "answer": "Sociální sítě v Česku Fake News blokují, takže se setkáváme pouze s ověřenými informacemi."
+            }
+          ],
+          "correctAnswer": 0
         }
       ]
     },

@@ -10,6 +10,10 @@
   margin: 20px 0;
 }
 
+.medailonek {
+  border: 1px groove #a98b75;
+}
+
 .btn {
   --hue: var(--hue-neutral);
   border: 1px solid black;

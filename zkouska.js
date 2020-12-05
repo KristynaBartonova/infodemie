@@ -3,10 +3,6 @@
 console.log('funguju');
 // TADY je JSON a uložená data - otázky a odpovědi - bude následně v samostatném dokumentu data.json
 
-// Nejspíš bylo by jednodušší to přepsat na POLE a ty následně budu procházet indexem - mohlo by to vyřešit problém, který je ve funkci generate, protože to neprochází všechny otázky a někde se to zasekává, neukazují se všechny. Je třeba to vyřešit.
-
-// Taky už je možné, to lépe nastylovat a přidat do celého kódu například POPUPY, které zapnou jednotlivé funkce viz níže, aby byla stránka více interaktivní - MOŽNÁ MÍSTO POPUPŮ NĚJAKÁ animace?
-
 const JSONdata = [
   {
     id: 0,
@@ -157,6 +153,7 @@ const JSONdata = [
     ],
   },
 ];
+
 //const definované a vytažené skrze getElementById//
 
 const answersElement = document.getElementById('answer-buttons');
