@@ -40,12 +40,12 @@ body {
   margin: 20px;
 }
 
-#paticka  {
-  position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color:lightblue;
-   color: white;
-   text-align: center;
+#paticka {
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightblue;
+  color: white;
+  text-align: center;
 }

@@ -214,7 +214,7 @@ const printResults = () => {
     const anchor = document.createElement('a');
     anchor.innerHTML = `Chci vědět víc`;
     anchor.classList.add('final-btn');
-    anchor.href = `${topic.topic}.html`;
+    anchor.href = `/content.html#${topic.topic}`;
     // vytvářím si odstavec, který se vypíše na konečné stránce
     const score = document.createElement('p');
     score.classList.add('score');
