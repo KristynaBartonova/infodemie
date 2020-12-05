@@ -7,9 +7,10 @@
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 5px;
   height: 30rem;
   width: 42rem;
+  --contentWidth: 40%;
 }
 
 #intro {
@@ -23,12 +24,21 @@
 }
 
 /* container - quiz */
+.container {
+  max-width: var(--contentWidth);
+  display: flex;
+  flex-grow: 0;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom:25px;
+}
 
 #question-container {
-  display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 40%;
+  max-width: 30%;
   padding-bottom: 30px;
 }
 
@@ -40,7 +50,9 @@
   text-align: center;
   text-decoration: none;
   border-radius: 4px;
-  display: inline-block;
+  display: flex;
+  flex-direction:row;
+  
 }
 
 .final-btn:hover {
