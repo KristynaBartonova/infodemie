@@ -1,0 +1,114 @@
+body > section {
+  padding: 2% 10% 0 10%;
+  text-align: justify;
+}
+.content-img {
+  border: 1px dotted #a98b75;
+  max-width: 600px;
+  margin-bottom: 1%;
+}
+
+#hoax,
+#reklama {
+  background-color: #f9efe9;
+}
+
+#fake-news,
+#nakup {
+  background-color: white;
+}
+
+.true {
+  font-size: large;
+  font-style: italic;
+}
+
+h2 {
+  column-span: all;
+  font-size: 1.6em;
+  padding: 0.5em;
+  margin: 2em 0;
+  color: #a98b75;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+h2:before {
+  content: ' ';
+  position: absolute;
+  width: 30%;
+  height: 10px;
+  z-index: -1;
+  bottom: -0.3em;
+  left: -2em;
+  background: #a98b75;
+  border-radius: 1em;
+}
+
+h3 {
+  color: #a98b75;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+h4,
+img {
+  column-span: all;
+  padding: 0.2em;
+  margin: 0.5em 0;
+  color: #a98b75;
+  font-style: italic;
+  text-align: center;
+}
+
+.start {
+  column-count: 2;
+  column-rule-style: dotted;
+  column-rule-color: rgb(169, 139, 117);
+  padding-bottom: 5%;
+}
+
+p {
+  padding: 0 2rem;
+}
+
+strong {
+  color: #a98b75;
+}
+
+.foto {
+  flex: 0 1 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.foto img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s;
+}
+
+.foto:hover img {
+  transform: scale(1.1);
+}
+
+.foto .popisek {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0.5%;
+  color: black;
+  opacity: 0.9;
+  background-color: rgba(169, 139, 117);
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.4s;
+  padding: 15px;
+  margin: 0;
+}
+
+.foto:hover .popisek {
+  transform: translateY(0);
+}
