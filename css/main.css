@@ -18,6 +18,7 @@ body {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #f9efe9;
@@ -48,4 +49,10 @@ footer {
   background-color:white;
   color: white;
   text-align: center;
+}
+
+#Kontaktujtenas {
+  padding:5px;
+  margin-bottom:35px;
+  margin-top:10px;
 }
