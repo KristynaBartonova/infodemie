@@ -1,6 +1,6 @@
 /* tady začíná js*/
 .score {
-  color: green;
+  color: #a98b75;
 }
 
 .btn-grid {
@@ -8,10 +8,6 @@
   grid-template-columns: repeat(2, auto);
   gap: 10px;
   margin: 20px 0;
-}
-
-.medailonek {
-  border: 1px groove #a98b75;
 }
 
 .btn {
