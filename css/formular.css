@@ -1,17 +1,13 @@
 /* Formulář */
 
-.formDiv {
-  background-color: hsl(163, 31%, 79%);
+.formular {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 1 1 1 1;
+  padding:10px;
+  margin:10px;
 }
 
-form {
-  padding: 10px;
-  margin: 10px;
+input {
+  width:100%;
 }
-
-/* FORM */
-#exampleInputMessage {
-  height:6rem;
-  text-align:top;
-}
-

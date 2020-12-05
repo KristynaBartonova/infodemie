@@ -24,10 +24,12 @@
           type: 'post',
           data: $('#myForm').serializeArray(),
           success: function () {
-            alert('Form Data Submitted :)');
+            alert('Data odeslána :)');
+            document.getElementById("myForm").reset();
           },
           error: function () {
-            alert('There was an error :(');
+            alert('Naskytla se nějaká chybka, zkuste to znovu :(');
+            document.getElementById("myForm").reset();
           },
         });
       }
@@ -73,20 +75,25 @@
       </nav>
     </header>
     <!-- konec menu -->
+    <div class="formular">
+    <h2>Chcete dostávat tipy na to, jak se bezpečně pohybovat na internetu? <br> Jak nenalétnout podvoníkům?</h2>
+    <h3>Tak se přihlašte do našeho newsletteru.</h3>
+    <p>Jednou za dva týdny Vám zašleme e-mail plný nových rad a tipů. </p>
     <!-- formular -->
     <form id="myForm">
-      <label>Váš e-mail</label>
+      <label>E-mail</label>
       <input name="email" />
       <br />
-      <label>Vaše jméno</label>
+      <label>Jméno</label>
       <input name="firstName" />
       <br />
       <label>Příjmení</label>
       <input name="lastName" />
       <br />
+      <br>
     </form>
-    <button onclick="SubForm()">Odeslat</button>
-
+    <button class="btn" onclick="SubForm()">Odeslat</button>
+  </div>
     <section id="paticka">
       <p>
         Tento web vznikl jako závěrečný projekt Digitální Akademie Web, kterou
@@ -94,7 +101,6 @@
         Bartoňová a Barbora Petříková.
       </p>
     </section>
-
     <script src="mail.js"></script>
   </body>
 </html>
