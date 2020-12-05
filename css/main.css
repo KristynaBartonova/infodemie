@@ -40,12 +40,6 @@ body {
   margin: 20px;
 }
 
-.formular {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 1 1 1 1;
-}
-
 #paticka  {
   position: fixed;
    left: 0;
