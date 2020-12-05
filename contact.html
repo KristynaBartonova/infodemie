@@ -24,10 +24,12 @@
           type: 'post',
           data: $('#myForm').serializeArray(),
           success: function () {
-            alert('Form Data Submitted :)');
+            alert('Data odeslána :)');
+            document.getElementById("myForm").reset();
           },
           error: function () {
-            alert('There was an error :(');
+            alert('Naskytla se nějaká chybka, zkuste to znovu :(');
+            document.getElementById("myForm").reset();
           },
         });
       }
@@ -74,6 +76,7 @@
     </header>
     <!-- konec menu -->
     <!-- formular -->
+    <div class="formular">
     <form id="myForm">
       <label>Váš e-mail</label>
       <input name="email" />
@@ -85,8 +88,8 @@
       <input name="lastName" />
       <br />
     </form>
-    <button onclick="SubForm()">Odeslat</button>
-
+    <button class="btn" onclick="SubForm()">Odeslat</button>
+  </div>
     <section id="paticka">
       <p>
         Tento web vznikl jako závěrečný projekt Digitální Akademie Web, kterou
