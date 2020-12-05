@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/bootstrap.css" />
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+  <title>Infodemie</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/kviz.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/formular.css" />
+  <link rel="stylesheet" href="css/mquery.css" />
+<title>Save Web Form Data to Spreadsheets</title>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script>
+function SubForm() {
+$.ajax({
+url: "https://api.apispreadsheets.com/data/4630/",
+type: "post",
+data: $("#myForm").serializeArray(),
+success: function() {
+alert("Form Data Submitted :)")
+},
+error: function() {
+alert("There was an error :(")
+}
+});
+}
+</script>
+</head>
+<body>
+<!-- MENU -->
+<header class="col-12 sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html"><img src="img/infodemie.svg" alt="Infodemie"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+    id="nav-btn">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">O projektu <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="content.html">Češi a internet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="zdroje.html">Kde se vzdělávat?</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        <a class="nav-link" href="contact.html">Kontaktujte nás</a>
+      </span>
+    </div>
+  </nav>
+</header>
+<!-- konec menu -->
+<form id="myForm">
+<label>Váš e-mail</label>
+<input name="email" />
+<br/>
+<label>Vaše jméno</label>
+<input name="firstName" />
+<br/>
+<label>Příjmení</label>
+<input name="lastName" />
+<br/>
+</form>
+<button onclick='SubForm()'>Odeslat</button>
+<script src="mail.js"></script>
+</body>
+</html>
