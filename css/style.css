@@ -1,6 +1,6 @@
 /* tady začíná js*/
-.score {
-  color: #a98b75;
+.medailonek {
+  border: 1px groove #a98b75;
 }
 
 .btn-grid {
@@ -75,7 +75,21 @@
   display: none;
 }
 
+section > #internet {
+  background-color: white;
+}
+
 /* tady končí css k js */
+
+#paticka {
+  display: inline-block;
+  background-color: white;
+  color: #787674;
+  font-weight: 50;
+  font-size: small;
+  padding: 1rem 0 0 0;
+  justify-content: center;
+}
 
 /* MEDIA QUERY */
 

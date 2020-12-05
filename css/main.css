@@ -13,7 +13,7 @@
 
 /* body */
 body {
-  --hue: var(--hue-neutral);
+  /* --hue: var(--hue-neutral); */
   padding: 0;
   margin: 0;
   display: flex;
@@ -35,7 +35,7 @@ body {
 }
 
 .card {
-  background-color: lightblue;
+  background-color: white;
   padding: 15px;
   margin: 20px;
 }

@@ -56,6 +56,10 @@
   background-color: #a98b75;
 }
 
+.score {
+  color: #a98b75;
+}
+
 .btn-grid {
   display: grid;
   grid-template-columns: repeat(2, auto);
