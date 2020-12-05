@@ -75,10 +75,6 @@
   display: none;
 }
 
-section > #internet {
-  background-color: white;
-}
-
 /* tady končí css k js */
 
 #paticka {
@@ -89,21 +85,4 @@ section > #internet {
   font-size: small;
   padding: 1rem 0 0 0;
   justify-content: center;
-}
-
-/* MEDIA QUERY */
-
-/* mobilní telefon */
-@media only screen and (max-width: 600px) {
-  .card-group {
-    display: none;
-  }
-  .main {
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    width: contain;
-  }
 }
