@@ -1,14 +1,12 @@
 /* tady začíná js*/
-.zdroj {
-  border: 1px groove #a98b75;
-}
 
-.btn-grid {
+
+/* .btn-grid {
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 10px;
   margin: 20px 0;
-}
+} */
 
 .btn {
   --hue: var(--hue-neutral);
