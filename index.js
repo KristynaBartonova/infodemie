@@ -57,7 +57,7 @@ const quizData = [
       {
         id: 2,
         question:
-          'Titulek: Petr Kellner investuje 1,5 milionu eur do startupu a říká, že zde se nachází budoucnost, začněte také investovat s bitcoiny.',
+          'Titulek: Petr Kellner investuje 1,5 mil. eur do startupu budoucnosti, začněte také investovat s bitcoiny a jeho vkladem.',
         answers: [
           {
             id: 0,
@@ -235,7 +235,8 @@ const quizData = [
           },
           {
             id: 2,
-            answer: 'c) Na první pohled to může být těžké, musím si ověřit fakta.',
+            answer:
+              'c) Na první pohled to může být těžké, musím si ověřit fakta.',
           },
           {
             id: 3,
@@ -281,15 +282,15 @@ const quizData = [
           },
           {
             id: 1,
-            answer: 'b) Reklama v článku musí být vždy jasně a čitelně označená.',
+            answer:
+              'b) Reklama v článku musí být vždy jasně a čitelně označená.',
           },
         ],
         correctAnswer: 2,
       },
       {
         id: 2,
-        question:
-          'Při registraci do jakéhokoliv účtu je třeba vybrat správné a silné heslo. Jak jej sestavit, aby bylo opravdu silné?',
+        question: 'Jak si sestavit heslo tak, aby bylo opravdu silné?',
         answers: [
           {
             id: 0,
@@ -420,7 +421,7 @@ const printResults = () => {
     // vytvářím si odstavec, který se vypíše na konečné stránce
     const score = document.createElement('p');
     score.classList.add('score');
-    score.innerHTML = ` V tématu ${topic.topic} jste získali následující počet bodů: ${userAnswer.correctAnswers}`;
+    score.innerHTML = ` V tématu ${topic.topic} jste získali následující počet bodů ${userAnswer.correctAnswers} z 5.`;
     // přidá se jak odstavec, tak i buttonový odstavec
     box.append(score, anchor);
   });
