@@ -53,8 +53,7 @@ h3 {
   padding: 0.5rem;
 }
 
-h4,
-img {
+h4 {
   column-span: all;
   padding: 0.2em;
   margin: 0.5em 0;
@@ -111,4 +110,11 @@ strong {
 
 .foto:hover .popisek {
   transform: translateY(0);
+}
+
+#hoax .carousel-control-prev-icon,
+#hoax .carousel-control-next-icon {
+  background: none;
+  box-shadow: 0;
+  color: rgba(169, 139, 117);
 }

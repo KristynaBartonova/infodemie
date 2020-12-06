@@ -86,7 +86,7 @@
   padding: 1rem 0 0 0;
   justify-content: center;
 }
-/* TADY je CONTENT */
+/* TADY je CONTENT
 body > section {
   padding: 2% 10% 0 10%;
   text-align: justify;
@@ -199,4 +199,4 @@ strong {
 
 .foto:hover .popisek {
   transform: translateY(0);
-}
+} */

@@ -14,15 +14,18 @@ const JSONdata = [
         answers: [
           {
             id: 0,
-            answer: 'Yes',
+            answer:
+              'Podvodná zpráva obsahující dezinformace. Často ji lze snadno zaměnit s důvěryhodnou zprávou ověřených médií.',
           },
           {
             id: 1,
-            answer: 'No',
+            answer:
+              'Podvodná zpráva, která je vpuštěna do světa, aby satiricky pobavila.',
           },
           {
             id: 2,
-            answer: 'lol',
+            answer:
+              'Podvodná zpráva, která je používána v médiích především na silvestr a má za úkol sledující a čtenáře pobavit.',
           },
         ],
         correctAnswer: 0,
