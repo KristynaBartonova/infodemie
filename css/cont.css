@@ -18,7 +18,8 @@ body > section {
 }
 
 #fake-news,
-#nakup {
+#nakup,
+#karuselNakup {
   background-color: white;
 }
 
@@ -124,9 +125,9 @@ strong {
   width: 100%;
   height: 100%;
 }
-#karuselNakup .carousel-inner img {
+/* #karuselNakup .carousel-inner img {
   margin: auto;
-}
+} */
 
 .carousel-control-prev,
 .carousel-control-next {
