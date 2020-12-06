@@ -33,4 +33,14 @@
       width: 85%;
       height: 85%;
     }
+    
+    #question-container {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: center;
+      justify-content: center;
+      max-width: 60%;
+      padding-bottom: 30px;
+    }
   }

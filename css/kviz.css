@@ -32,7 +32,7 @@
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  max-width: 40%;
+  max-width: 75%;
   padding-bottom: 30px;
 }
 
@@ -49,6 +49,12 @@
   
 }
 
+.final-btn {
+  width: 50%;
+  height: 20%;
+  justify-content: center;
+}
+
 .final-btn:hover {
   background-color: #a98b75;
 }
@@ -57,11 +63,13 @@
   color: #a98b75;
 }
 
+#answer-buttons {
+  display:flex;
+  flex-direction: column;
+}
+
 .btn-grid {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 10px;
-  margin: 20px 0;
+gap:5px;
 }
 
 .btn {
@@ -82,7 +90,7 @@
   color: green;
 }
 
-#answer-buttons {
-  display:flex;
-  flex-direction: column;
+p.score {
+  margin-top:3px;
+  margin-bottom:0px;
 }

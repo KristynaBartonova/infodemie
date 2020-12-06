@@ -14,21 +14,21 @@ const quizData = [
           {
             id: 0,
             answer:
-              'Podvodná zpráva obsahující dezinformace. Často ji lze snadno zaměnit s důvěryhodnou zprávou ověřených médií.',
+              'a) Podvodná zpráva obsahující dezinformace. Často ji lze snadno zaměnit s důvěryhodnou zprávou ověřených médií.',
           },
           {
             id: 1,
             answer:
-              'Podvodná zpráva, která je vpuštěna do světa, aby satiricky pobavila.',
+              'b) Podvodná zpráva, která je vpuštěna do světa, aby satiricky pobavila.',
           },
           {
             id: 2,
             answer:
-              'Podvodná zpráva, která je používána v médiích především na silvestr a má za úkol sledující a čtenáře pobavit.',
+              'c) Podvodná zpráva, která je používána v médiích především na silvestr a má za úkol sledující a čtenáře pobavit.',
           },
           {
             id: 3,
-            answer: 'Podvodná zpráva, která má odlehčit téma.',
+            answer: 'd) Podvodná zpráva, která má odlehčit téma.',
           },
         ],
         correctAnswer: 0,
@@ -40,16 +40,16 @@ const quizData = [
         answers: [
           {
             id: 0,
-            answer: 'Bude s největší pravděpodobností Fake News.',
+            answer: 'a) Bude s největší pravděpodobností Fake News.',
           },
           {
             id: 1,
-            answer: 'Bude se jednat o seriózní článek.',
+            answer: 'b) Bude se jednat o seriózní článek.',
           },
           {
             id: 2,
             answer:
-              'Nejspíš půjde o bulvární článek, ale nejedná se o Fake News.',
+              'c) Nejspíš půjde o bulvární článek, ale nejedná se o Fake News.',
           },
         ],
         correctAnswer: 2,
@@ -61,16 +61,16 @@ const quizData = [
         answers: [
           {
             id: 0,
-            answer: 'Bude s největší pravděpodobností Fake News.',
+            answer: 'a) Bude s největší pravděpodobností Fake News.',
           },
           {
             id: 1,
-            answer: 'Bude se jednat o seriózní článek.',
+            answer: 'b) Bude se jednat o seriózní článek.',
           },
           {
             id: 2,
             answer:
-              'Nejspíš půjde o bulvární článek, ale nejedná se o Fake News.',
+              'c) Nejspíš půjde o bulvární článek, ale nejedná se o Fake News.',
           },
         ],
         correctAnswer: 0,
@@ -81,19 +81,19 @@ const quizData = [
         answers: [
           {
             id: 0,
-            answer: 'Pouze ve spamových e-mailech.',
+            answer: 'a) Pouze ve spamových e-mailech.',
           },
           {
             id: 1,
-            answer: 'Může se objevit úplně všude dokonce i v televizi.',
+            answer: 'b) Může se objevit úplně všude dokonce i v televizi.',
           },
           {
             id: 2,
-            answer: 'Na sociálních sítích nebo v e-mailu.',
+            answer: 'c) Na sociálních sítích nebo v e-mailu.',
           },
           {
             id: 3,
-            answer: 'Pouze na nedůvěryhodných webech.',
+            answer: 'd) Pouze na nedůvěryhodných webech.',
           },
         ],
         correctAnswer: 1,
@@ -104,20 +104,20 @@ const quizData = [
         answers: [
           {
             id: 0,
-            answer: 'Ano, je to běžný jev.',
+            answer: 'a) Ano, je to běžný jev.',
           },
           {
             id: 1,
-            answer: 'Ne, jedná se o fenomén se kterým má problém jenom USA.',
+            answer: 'b) Ne, jedná se o fenomén se kterým má problém jenom USA.',
           },
           {
             id: 2,
-            answer: 'Pouze ojediněle.',
+            answer: 'c) Pouze ojediněle.',
           },
           {
             id: 3,
             answer:
-              'Sociální sítě v Česku Fake News blokují, takže se setkáváme pouze s ověřenými informacemi.',
+              'd) Sociální sítě v Česku Fake News blokují, takže se setkáváme pouze s ověřenými informacemi.',
           },
         ],
         correctAnswer: 0,
@@ -134,12 +134,12 @@ const quizData = [
         answers: [
           {
             id: 0,
-            answer: 'Pošlu ho dál, aby se pobavili i moji přátelé.',
+            answer: 'a) Pošlu ho dál, aby se pobavili i moji přátelé.',
           },
           {
             id: 1,
             answer:
-              'Zkontroluju si, zda jsou všechny e-maily ve skryté kopii. Pokud se mi na něm zdá cokoliv divného nikomu to dále neposílám.',
+              'b) Zkontroluju si, zda jsou všechny e-maily ve skryté kopii. Pokud se mi na něm zdá cokoliv divného nikomu to dále neposílám.',
           },
         ],
         correctAnswer: 0,
@@ -151,21 +151,21 @@ const quizData = [
           {
             id: 0,
             answer:
-              'Jedná se o pravdivou zprávu, kterou mainstreamová média odmítají publikovat.',
+              'a) Jedná se o pravdivou zprávu, kterou mainstreamová média odmítají publikovat.',
           },
           {
             id: 1,
             answer:
-              'Jedná se o zprávu, která je založena na vědeckých poznatcích.',
+              'b) Jedná se o zprávu, která je založena na vědeckých poznatcích.',
           },
           {
             id: 2,
             answer:
-              'Jedná se o nepravdivou zprávu, která se tváří, jako by byla pravdivá.',
+              'c) Jedná se o nepravdivou zprávu, která se tváří, jako by byla pravdivá.',
           },
           {
             id: 3,
-            answer: 'Jedná se o cenzurovanou zprávu na sociálních sítích.',
+            answer: 'd) Jedná se o cenzurovanou zprávu na sociálních sítích.',
           },
         ],
         correctAnswer: 2,
@@ -176,21 +176,21 @@ const quizData = [
         answers: [
           {
             id: 0,
-            answer: 'Vaše okolí si bude myslet, že jste nemocní na hlavu.',
+            answer: 'a) Vaše okolí si bude myslet, že jste nemocní na hlavu.',
           },
           {
             id: 1,
-            answer: 'Běžní obyvatelé se nedozví pravdu.',
+            answer: 'b) Běžní obyvatelé se nedozví pravdu.',
           },
           {
             id: 2,
             answer:
-              'Může se k vašemu e-mailu dostat i jiná osoba ale také může dojít k manipulaci obyvatelstva a šíření paniky.',
+              'c) Může se k vašemu e-mailu dostat i jiná osoba ale také může dojít k manipulaci obyvatelstva a šíření paniky.',
           },
           {
             id: 3,
             answer:
-              'Problém spočívá v tom, že hoaxy přebírají hlavní slovo ve zprávách a k publiku se nedostanou ty nejdůležitější informace.',
+              'd) Problém spočívá v tom, že hoaxy přebírají hlavní slovo ve zprávách a k publiku se nedostanou ty nejdůležitější informace.',
           },
         ],
         correctAnswer: 2,
@@ -201,22 +201,22 @@ const quizData = [
         answers: [
           {
             id: 0,
-            answer: 'Zeptáte se přátel na Facebooku.',
+            answer: 'a) Zeptáte se přátel na Facebooku.',
           },
           {
             id: 1,
             answer:
-              'Pokud je tam uveden autor článku, nejedná se o hoax. Můžu tedy zprávu s klidem poslat přátelům.',
+              'b) Pokud je tam uveden autor článku, nejedná se o hoax. Můžu tedy zprávu s klidem poslat přátelům.',
           },
           {
             id: 2,
             answer:
-              'Hoaxy se v ČR nevyskytují, proto není nutné ověřovat, zda článek obsahuje hoax.',
+              'c) Hoaxy se v ČR nevyskytují, proto není nutné ověřovat, zda článek obsahuje hoax.',
           },
           {
             id: 3,
             answer:
-              'Podíváte se zdroje, na které odkazuje článek. Pokud je obsahuje, tak zda jsou relevantní.',
+              'd) Podíváte se zdroje, na které odkazuje článek. Pokud je obsahuje, tak zda jsou relevantní.',
           },
         ],
         correctAnswer: 3,
@@ -227,20 +227,20 @@ const quizData = [
         answers: [
           {
             id: 0,
-            answer: 'Má hodně sdílení.',
+            answer: 'a) Má hodně sdílení.',
           },
           {
             id: 1,
-            answer: 'Sdílel jí někdo, komu věřím.',
+            answer: 'b) Sdílel jí někdo, komu věřím.',
           },
           {
             id: 2,
-            answer: 'Na první pohled to může být těžké, musím si ověřit fakta.',
+            answer: 'c) Na první pohled to může být těžké, musím si ověřit fakta.',
           },
           {
             id: 3,
             answer:
-              'Sociální sítě blokují Fake News, s takovou zprávou se nesetkám.',
+              'd) Sociální sítě blokují Fake News, s takovou zprávou se nesetkám.',
           },
         ],
         correctAnswer: 2,
@@ -258,15 +258,15 @@ const quizData = [
           {
             id: 0,
             answer:
-              'URL adresa začíná HTTPS a na okraji adresní řádky je znak zámku.',
+              'a) URL adresa začíná HTTPS a na okraji adresní řádky je znak zámku.',
           },
           {
             id: 1,
-            answer: 'URL adresa začíná HTTP.',
+            answer: 'b) URL adresa začíná HTTP.',
           },
           {
             id: 2,
-            answer: 'Najdu si ji v seznamu zabezpečených webových stránek.',
+            answer: 'c) Najdu si ji v seznamu zabezpečených webových stránek.',
           },
         ],
         correctAnswer: 0,
@@ -277,11 +277,11 @@ const quizData = [
         answers: [
           {
             id: 0,
-            answer: 'Reklama musí souviset s tématem článku. ',
+            answer: 'a) Reklama musí souviset s tématem článku. ',
           },
           {
             id: 1,
-            answer: 'Reklama v článku musí být vždy jasně a čitelně označená.',
+            answer: 'b) Reklama v článku musí být vždy jasně a čitelně označená.',
           },
         ],
         correctAnswer: 2,
@@ -293,20 +293,20 @@ const quizData = [
         answers: [
           {
             id: 0,
-            answer: 'Zadat své rodné číslo.',
+            answer: 'a) Zadat své rodné číslo.',
           },
           {
             id: 1,
-            answer: 'Heslo by mělo být lehce zapamatovatelné.',
+            answer: 'b) Heslo by mělo být lehce zapamatovatelné.',
           },
           {
             id: 2,
-            answer: 'Přidat do hesla jméno rodinného příslušníka.',
+            answer: 'c) Přidat do hesla jméno rodinného příslušníka.',
           },
           {
             id: 3,
             answer:
-              'Používat kombinaci čísel, malých a velkých písmen a znaků.',
+              'd) Používat kombinaci čísel, malých a velkých písmen a znaků.',
           },
         ],
         correctAnswer: 3,
@@ -318,19 +318,19 @@ const quizData = [
           {
             id: 0,
             answer:
-              'Zabrání tomu, aby někdo sledoval, jaké stránky navštěvuji.',
+              'a) Zabrání tomu, aby někdo sledoval, jaké stránky navštěvuji.',
           },
           {
             id: 1,
-            answer: 'Veškerá aktivita na stránkách není nijak dohledatelná.',
+            answer: 'b) Veškerá aktivita na stránkách není nijak dohledatelná.',
           },
           {
             id: 2,
-            answer: 'Zabrání ukládání aktivity do místní paměti.',
+            answer: 'c) Zabrání ukládání aktivity do místní paměti.',
           },
           {
             id: 3,
-            answer: 'Zabrání zobrazení aktualní lokality.',
+            answer: 'd) Zabrání zobrazení aktualní lokality.',
           },
         ],
         correctAnswer: 2,
@@ -342,20 +342,20 @@ const quizData = [
           {
             id: 0,
             answer:
-              'E-shopu, která má na svých stránkách zmínku o starořeckém učenci Archimédésovi.',
+              'a) E-shopu, která má na svých stránkách zmínku o starořeckém učenci Archimédésovi.',
           },
           {
             id: 1,
-            answer: 'Pouze e-shopu, který si u Heureky zaplatí reklamu.',
+            answer: 'b) Pouze e-shopu, který si u Heureky zaplatí reklamu.',
           },
           {
             id: 2,
-            answer: 'Každému e-shopu, který má nové zboží na českém trhu.',
+            answer: 'c) Každému e-shopu, který má nové zboží na českém trhu.',
           },
           {
             id: 3,
             answer:
-              'Které již mají nějaké zpětné vazby od zákazníků, lze dohledat jejich hodnocení a jedná se o prověřený e-shop.',
+              'd) Které již mají nějaké zpětné vazby od zákazníků, lze dohledat jejich hodnocení a jedná se o prověřený e-shop.',
           },
         ],
         correctAnswer: 3,
