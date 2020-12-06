@@ -8,6 +8,15 @@
   outline: none;
 }
 
+a {
+  color: #a98b75;
+}
+
+a:hover {
+  color: white;
+  background-color: #a98b75;
+}
+
 .btn:hover {
   border-color: black;
 }
