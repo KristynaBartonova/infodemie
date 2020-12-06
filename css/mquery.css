@@ -1,0 +1,32 @@
+/* MEDIA QUERY */
+/* mobilní telefon */
+
+@media only screen and (max-width: 600px) {
+
+  header {
+    width: 100%;
+  }
+  .main {
+      display:flex;
+      background-image:url('../img/mobile3.svg');
+      width: 100%;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      height: 40rem;
+      width: 30rem;
+      font-size:15px;
+    }
+    .container {
+      background-color: transparent;
+      border-radius: 5px;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom:25px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
