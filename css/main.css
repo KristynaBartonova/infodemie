@@ -93,8 +93,3 @@ h2 {
   background-color:white;
   color:#41403f;
 }
-
-#answer-buttons {
-  display:flex;
-  flex-direction: column;
-}
