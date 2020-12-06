@@ -1,13 +1,11 @@
 /* Formulář */
 
-.formular {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 1 1 1 1;
-  padding:10px;
-  margin:10px;
-}
-
 input {
   width:100%;
+}
+
+.form {
+  border: 3px dotted #a98b75;
+  margin:30px;
+  padding: 25px;
 }

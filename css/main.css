@@ -92,10 +92,7 @@ h2 {
   margin-right: 10px;
 }
 
-
-.form {
-  padding: 4% 14% 0 13%;
-  text-align: justify;
-  border: 3px dotted  #a98b75;
-  margin:16px;
+#answer-buttons {
+  display:flex;
+  flex-direction: column;
 }
