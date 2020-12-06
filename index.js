@@ -2,7 +2,7 @@
 
 console.log('funguju');
 
-const JSONdata = [
+const quizData = [
   {
     id: 0,
     topic: 'Fake News',
@@ -277,14 +277,10 @@ const JSONdata = [
         answers: [
           {
             id: 0,
-            answer: ' ',
-          },
-          {
-            id: 1,
             answer: 'Reklama musí souviset s tématem článku. ',
           },
           {
-            id: 2,
+            id: 1,
             answer: 'Reklama v článku musí být vždy jasně a čitelně označená.',
           },
         ],
@@ -376,11 +372,11 @@ const nextButton = document.getElementById('next-btn');
 const quizContainer = document.getElementById('question-container');
 
 // upraví JSON data na původní strukturu, kterou vymazává prettier
-const questionsSetString = JSON.stringify(JSONdata);
-const questionsSet = JSON.parse(questionsSetString);
+// const questionsSetString = JSON.stringify(quizData);
+// const questionsSet = JSON.parse(questionsSetString);
 
 // určuje téma
-const numberOfTopics = JSONdata.length - 1;
+const numberOfTopics = quizData.length - 1;
 
 // tady se spouští hra
 const startGame = () => {
@@ -402,7 +398,7 @@ let actualQuestion = {
 };
 
 // tady se mapují odpovědi uživatele - funkce map prjede odpovědi, které následně porovná se správnými odpověďmi
-let userAnswers = JSONdata.map((topic) => ({
+let userAnswers = quizData.map((topic) => ({
   topicId: topic.id,
   correctAnswers: 0,
 }));
@@ -414,7 +410,7 @@ const printResults = () => {
   // prochází uživatelské odpovědi, které se zapisují
   userAnswers.forEach((userAnswer) => {
     // prochází téma v JSONU - téma by se mělo rovnat uživatelské odpovědi tématu
-    const topic = JSONdata.find((topic) => topic.id === userAnswer.topicId);
+    const topic = quizData.find((topic) => topic.id === userAnswer.topicId);
     questionElement.textContent = 'Zvládli jste to';
     // vytvářím si buttonový odkaz, který bude vést na všechny tři témata
     const anchor = document.createElement('a');
@@ -433,7 +429,7 @@ const printResults = () => {
 // tahle funkce mění otázky
 const changeQuestion = () => {
   // vybere téma pomocí funkce find a porovná to s témate aktuálně zvolené otázky
-  const topic = JSONdata.find((topic) => topic.id === actualQuestion.topicId);
+  const topic = quizData.find((topic) => topic.id === actualQuestion.topicId);
   // kontroluju, jestli vybrané téma není poslední
   if (actualQuestion.topicId < numberOfTopics) {
     console.log('not last topic');
@@ -461,7 +457,7 @@ const changeQuestion = () => {
 const generate = (actualQuestion) => {
   answersElement.innerHTML = '';
   // tady si definuji téma, které se vybeere díky JSON stuktuře, kterou projede funkce find viz výše
-  const topic = JSONdata.find((topic) => topic.id === actualQuestion.topicId);
+  const topic = quizData.find((topic) => topic.id === actualQuestion.topicId);
   // tady si definuji otázku a kde ji najdu
   const question = topic.questions.find(
     (question) => question.id === actualQuestion.questionId,
