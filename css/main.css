@@ -90,6 +90,8 @@ h2 {
   box-shadow: 3px 3px 3px 3px #a98b75;
   margin-left:10px;
   margin-right: 10px;
+  background-color:white;
+  color:#41403f;
 }
 
 #answer-buttons {
