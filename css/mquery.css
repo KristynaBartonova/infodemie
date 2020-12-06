@@ -45,8 +45,18 @@
       padding-bottom: 30px;
     }
     .introd {
-      height: 15.2rem;
+      height: 7.7rem;
     }
+    #intro {
+      text-align: center;
+      color: black;
+      color: #787674;
+      font-size: 28px;
+      letter-spacing: -1px;
+      margin-top: 20px;
+      margin-bottom: 0px;
+    }
+
   }
 
   @media only screen and (min-width: 1000px) {
@@ -55,5 +65,8 @@
     }
     .card-group {
       max-width:85%;
+    }
+    #intro {
+      font-size: 43px;
     }
   }
