@@ -5,12 +5,13 @@
   width: 100%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  display:flex;
+  flex-direction:row;
   align-items: center;
   justify-content: center;
   margin-top: 5px;
   height: 30rem;
   width: 42rem;
-  --contentWidth: 40%;
 }
 
 #intro {
@@ -24,21 +25,14 @@
 }
 
 /* container - quiz */
-.container {
-  max-width: var(--contentWidth);
-  display: flex;
-  flex-grow: 0;
-  background-color: transparent;
-  border-radius: 5px;
-  padding: 10px;
-  margin-top: 20px;
-  margin-bottom:25px;
-}
 
 #question-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
-  max-width: 30%;
+  max-width: 40%;
   padding-bottom: 30px;
 }
 
