@@ -5,7 +5,7 @@ console.log('funguju');
 const quizData = [
   {
     id: 0,
-    topic: 'FakeNews',
+    topic: 'fakeNews',
     questions: [
       {
         id: 0,
@@ -126,7 +126,7 @@ const quizData = [
   },
   {
     id: 1,
-    topic: 'Hoax',
+    topic: 'hoax',
     questions: [
       {
         id: 0,
@@ -250,7 +250,7 @@ const quizData = [
   },
   {
     id: 2,
-    topic: 'Internet',
+    topic: 'internet',
     questions: [
       {
         id: 0,
