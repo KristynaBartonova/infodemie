@@ -2,45 +2,68 @@
 /* mobilní telefon/tablet */
 
 @media only screen and (max-width: 600px) {
-
   header {
     width: 100%;
   }
   .main {
-      display:flex;
-      background-image:url('../img/mobile3.svg');
-      width: 100%;
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      align-items: center;
-      justify-content: center;
-      margin-top: 10px;
-      margin-bottom: 30px;
-      height: 40rem;
-      width: 30rem;
-      font-size:15px;
-    }
-    .container {
-      background-color: transparent;
-      border-radius: 5px;
-      padding: 10px;
-      margin-top: 10px;
-      margin-bottom:25px;
-      display: flex;
-      flex-direction: column;
-    }
-    .card {
-      width: 85%;
-      height: 85%;
-    }
-    
-    #question-container {
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      align-items: center;
-      justify-content: center;
-      max-width: 60%;
-      padding-bottom: 30px;
-    }
+    display: flex;
+    background-image: url('../img/mobile3.svg');
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 40rem;
+    width: 30rem;
+    font-size: 15px;
   }
+  .container {
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 85%;
+    height: 85%;
+  }
+
+  #question-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    max-width: 60%;
+    padding-bottom: 30px;
+  }
+  .introd {
+    height: 7.7rem;
+  }
+  #intro {
+    text-align: center;
+    color: rgba(169, 139, 117);
+    font-size: 28px;
+    letter-spacing: -1px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .introd {
+    height: 3.3rem;
+  }
+  .card-group {
+    max-width: 85%;
+  }
+  #intro {
+    font-size: 43px;
+  }
+}

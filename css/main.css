@@ -46,19 +46,19 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color:white;
+  background-color: white;
   color: white;
   text-align: center;
 }
 
 #Kontaktujtenas {
-  padding:5px;
-  margin-bottom:35px;
-  margin-top:10px;
+  padding: 5px;
+  margin-bottom: 35px;
+  margin-top: 10px;
 }
 h1 {
-  color:#a98b75;
-  margin-top:20px;
+  color: #a98b75;
+  margin-top: 20px;
 }
 
 h1:before {
@@ -74,18 +74,17 @@ h1:before {
 }
 
 h2 {
-  margin:15px;
-  padding:10px;
+  margin: 15px;
+  padding: 10px;
 }
 .main {
-  display:flex;
+  display: flex;
   align-items: center;
-  justify-items:center;
+  justify-items: center;
 }
 
 #answer-buttons {
-display:flex;
-flex-direction: row;
-order: 2 4 2 2;
-
+  display: flex;
+  flex-direction: row;
+  order: 2 4 2 2;
 }

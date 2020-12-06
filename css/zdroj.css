@@ -6,11 +6,16 @@
   border-radius: 5px;
   padding: 10px;
   margin-top: 20px;
-  margin-bottom:25px;
+  margin-bottom: 25px;
   border: 2.5px solid #a98b75;
   box-shadow: 3px 3px 3px 3px #a98b75;
-  margin-left:10px;
+  margin-left: 10px;
   margin-right: 10px;
-  background-color:white;
-  color:#41403f;
+  background-color: white;
+  color: #41403f;
+}
+
+h2 {
+  color: #a98b75;
+  text-shadow: 2px 2px white;
 }

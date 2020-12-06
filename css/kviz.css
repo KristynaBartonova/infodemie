@@ -16,9 +16,8 @@
 
 #intro {
   text-align: center;
-  color: black;
-  color: #787674;
-  font-size: 40px;
+  color: rgba(169, 139, 117);
+  font-size: 38px;
   letter-spacing: -1px;
   margin-top: 20px;
   margin-bottom: 0px;
@@ -88,9 +87,13 @@
 
 .score {
   color: green;
+  font-weight: bold;
 }
 
 p.score {
   margin-top: 3px;
   margin-bottom: 0px;
+}
+.introd {
+  height: 7rem;
 }

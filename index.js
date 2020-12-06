@@ -36,7 +36,7 @@ const quizData = [
       {
         id: 1,
         question:
-          'Titulek: Vakcínu už koupíte v temném koutě internetu, „zahrabanou“ mezi drogami. Policie je ve střehu ',
+          'Titulek: Vakcínu už koupíte v temném koutě internetu, „zahrabanou“ mezi drogami. Policie je ve střehu.',
         answers: [
           {
             id: 0,
@@ -412,7 +412,7 @@ const printResults = () => {
   userAnswers.forEach((userAnswer) => {
     // prochází téma v JSONU - téma by se mělo rovnat uživatelské odpovědi tématu
     const topic = quizData.find((topic) => topic.id === userAnswer.topicId);
-    questionElement.textContent = 'Zvládli jste to';
+    questionElement.textContent = 'Zvládli jste to!';
     // vytvářím si buttonový odkaz, který bude vést na všechny tři témata
     const anchor = document.createElement('a');
     anchor.innerHTML = `Chci vědět víc`;
