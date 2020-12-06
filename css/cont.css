@@ -2,10 +2,12 @@ body > section {
   padding: 2% 10% 0 10%;
   text-align: justify;
 }
-.content-img {
+.content-img,
+.carousel-item {
   border: 1px dotted #a98b75;
   max-width: 600px;
   margin-bottom: 1%;
+  padding-right: 0;
 }
 
 #hoax,
@@ -112,9 +114,25 @@ strong {
   transform: translateY(0);
 }
 
-#hoax .carousel-control-prev-icon,
-#hoax .carousel-control-next-icon {
-  background: none;
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(169, 139, 117);
+  border-radius: 50%;
   box-shadow: 0;
-  color: rgba(169, 139, 117);
+  color: white;
+  top: calc(50%);
+}
+
+.carousel-control-prev {
+  left: 5%;
+}
+
+.carousel-control-next {
+  right: 5%;
 }
