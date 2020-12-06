@@ -151,3 +151,17 @@ strong {
 #karuselNakup .carousel-inner {
   vertical-align: middle;
 }
+
+#karuselNakup {
+  width:100%;
+  padding-left:32%;
+  padding-right: 30%;
+}
+
+#karuselNakup .carousel-control-prev {
+  left: 25%;
+}
+
+#karuselNakup .carousel-control-next {
+  right: 30%;
+}
