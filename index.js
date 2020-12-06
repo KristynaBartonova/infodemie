@@ -3,161 +3,172 @@
 console.log('funguju');
 // TADY je JSON a uložená data - otázky a odpovědi - bude následně v samostatném dokumentu data.json
 
-const JSONdata = [
-  {
-    id: 0,
-    topic: 'Fake News',
-    questions: [
-      {
-        id: 0,
-        question: 'Is the fakenews really fakenews?',
-        answers: [
-          {
-            id: 0,
-            answer:
-              'Podvodná zpráva obsahující dezinformace. Často ji lze snadno zaměnit s důvěryhodnou zprávou ověřených médií.',
-          },
-          {
-            id: 1,
-            answer:
-              'Podvodná zpráva, která je vpuštěna do světa, aby satiricky pobavila.',
-          },
-          {
-            id: 2,
-            answer:
-              'Podvodná zpráva, která je používána v médiích především na silvestr a má za úkol sledující a čtenáře pobavit.',
-          },
-        ],
-        correctAnswer: 0,
-      },
-      {
-        id: 1,
-        question: 'Kolik je 4 * 2?',
-        answers: [
-          {
-            id: 0,
-            answer: '6',
-          },
-          {
-            id: 1,
-            answer: '8',
-          },
-          {
-            id: 2,
-            answer: '1',
-          },
-          {
-            id: 3,
-            answer: '5',
-          },
-        ],
-        correctAnswer: 1,
-      },
-    ],
-  },
-  {
-    id: 1,
-    topic: 'Hoax',
-    questions: [
-      {
-        id: 0,
-        question: 'Hoax lol wtf omg',
-        answers: [
-          {
-            id: 0,
-            answer: 'Yes',
-          },
-          {
-            id: 1,
-            answer: 'No',
-          },
-          {
-            id: 2,
-            answer: 'lol',
-          },
-        ],
-        correctAnswer: 0,
-      },
-      {
-        id: 1,
-        question: 'Kolik je 666 * 1?',
-        answers: [
-          {
-            id: 0,
-            answer: '1',
-          },
-          {
-            id: 1,
-            answer: '2',
-          },
-          {
-            id: 2,
-            answer: '3',
-          },
-          {
-            id: 3,
-            answer: '666',
-          },
-        ],
-        correctAnswer: 3,
-      },
-    ],
-  },
-  {
-    id: 2,
-    topic: 'Internet',
-    questions: [
-      {
-        id: 0,
-        question: 'Jak se dneska máš?',
-        answers: [
-          {
-            id: 0,
-            answer: 'Dobře',
-          },
-          {
-            id: 1,
-            answer: 'Špatně',
-          },
-          {
-            id: 2,
-            answer: 'Chce to vínko',
-          },
-          {
-            id: 3,
-            answer: 'nevím',
-          },
-        ],
-        correctAnswer: 3,
-      },
-      {
-        id: 1,
-        question: 'Kolik je 4 * 1?',
-        answers: [
-          {
-            id: 0,
-            answer: '6',
-          },
-          {
-            id: 1,
-            answer: '8',
-          },
-          {
-            id: 2,
-            answer: '4',
-          },
-          {
-            id: 3,
-            answer: '1',
-          },
-        ],
-        correctAnswer: 2,
-      },
-    ],
-  },
-];
+// const JSONdata = [
+//   {
+//     id: 0,
+//     topic: 'Fake News',
+//     questions: [
+//       {
+//         id: 0,
+//         question: 'Is the fakenews really fakenews?',
+//         answers: [
+//           {
+//             id: 0,
+//             answer:
+//               'Podvodná zpráva obsahující dezinformace. Často ji lze snadno zaměnit s důvěryhodnou zprávou ověřených médií.',
+//           },
+//           {
+//             id: 1,
+//             answer:
+//               'Podvodná zpráva, která je vpuštěna do světa, aby satiricky pobavila.',
+//           },
+//           {
+//             id: 2,
+//             answer:
+//               'Podvodná zpráva, která je používána v médiích především na silvestr a má za úkol sledující a čtenáře pobavit.',
+//           },
+//         ],
+//         correctAnswer: 0,
+//       },
+//       {
+//         id: 1,
+//         question: 'Kolik je 4 * 2?',
+//         answers: [
+//           {
+//             id: 0,
+//             answer: '6',
+//           },
+//           {
+//             id: 1,
+//             answer: '8',
+//           },
+//           {
+//             id: 2,
+//             answer: '1',
+//           },
+//           {
+//             id: 3,
+//             answer: '5',
+//           },
+//         ],
+//         correctAnswer: 1,
+//       },
+//     ],
+//   },
+//   {
+//     id: 1,
+//     topic: 'Hoax',
+//     questions: [
+//       {
+//         id: 0,
+//         question: 'Hoax lol wtf omg',
+//         answers: [
+//           {
+//             id: 0,
+//             answer: 'Yes',
+//           },
+//           {
+//             id: 1,
+//             answer: 'No',
+//           },
+//           {
+//             id: 2,
+//             answer: 'lol',
+//           },
+//         ],
+//         correctAnswer: 0,
+//       },
+//       {
+//         id: 1,
+//         question: 'Kolik je 666 * 1?',
+//         answers: [
+//           {
+//             id: 0,
+//             answer: '1',
+//           },
+//           {
+//             id: 1,
+//             answer: '2',
+//           },
+//           {
+//             id: 2,
+//             answer: '3',
+//           },
+//           {
+//             id: 3,
+//             answer: '666',
+//           },
+//         ],
+//         correctAnswer: 3,
+//       },
+//     ],
+//   },
+//   {
+//     id: 2,
+//     topic: 'Internet',
+//     questions: [
+//       {
+//         id: 0,
+//         question: 'Jak se dneska máš?',
+//         answers: [
+//           {
+//             id: 0,
+//             answer: 'Dobře',
+//           },
+//           {
+//             id: 1,
+//             answer: 'Špatně',
+//           },
+//           {
+//             id: 2,
+//             answer: 'Chce to vínko',
+//           },
+//           {
+//             id: 3,
+//             answer: 'nevím',
+//           },
+//         ],
+//         correctAnswer: 3,
+//       },
+//       {
+//         id: 1,
+//         question: 'Kolik je 4 * 1?',
+//         answers: [
+//           {
+//             id: 0,
+//             answer: '6',
+//           },
+//           {
+//             id: 1,
+//             answer: '8',
+//           },
+//           {
+//             id: 2,
+//             answer: '4',
+//           },
+//           {
+//             id: 3,
+//             answer: '1',
+//           },
+//         ],
+//         correctAnswer: 2,
+//       },
+//     ],
+//   },
+// ];
+
+const JSONdata = fetch('data.json')
+  .then(function (resp) {
+    return resp.json();
+  })
+  .then(function (data) {
+    console.log(data);
+  });
 
 //const definované a vytažené skrze getElementById//
+
+const aData = Object.values(JSONdata);
+console.log(aData);
 
 const answersElement = document.getElementById('answer-buttons');
 const startButton = document.getElementById('start-btn');

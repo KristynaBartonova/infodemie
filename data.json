@@ -29,33 +29,41 @@
         },
         {
           "id": 1,
-          "question": "Je tohle důvěryhodná informace?",
+          "question": "Titulek: Vakcínu už koupíte v temném koutě internetu, „zahrabanou“ mezi drogami. Policie je ve střehu ",
           "answers": [
             {
               "id": 0,
-              "answer": "Ano"
+              "answer": "Bude s největší pravděpodobností Fake News."
             },
             {
               "id": 1,
-              "answer": "Ne."
+              "answer": "Bude se jednat o seriózní článek."
+            },
+            {
+              "id": 2,
+              "answer": "Nejspíš půjde o bulvární článek, ale nejedná se o Fake News."
             }
           ],
-          "correctAnswer": 0
+          "correctAnswer": 2
         },
         {
           "id": 1,
-          "question": "Co na předchozím obrázku bylo špatně?",
+          "question": "Titulek: Petr Kellner investuje 1,5 milionu eur do startupu a říká, že zde se nachází budoucnost, začněte také investovat s bitcoiny.",
           "answers": [
             {
               "id": 0,
-              "answer": "Byl v pořádku."
+              "answer": "Bude s největší pravděpodobností Fake News."
             },
             {
               "id": 1,
-              "answer": "Url stránky byla nedůvěryhodná"
+              "answer": "Bude se jednat o seriózní článek."
+            },
+            {
+              "id": 2,
+              "answer": "Nejspíš půjde o bulvární článek, ale nejedná se o Fake News."
             }
           ],
-          "correctAnswer": 1
+          "correctAnswer": 0
         },
         {
           "id": 2,
@@ -105,26 +113,26 @@
         },
         {
           "id": 4,
-          "question": "Můžeme se s Fake News setkat i v Česku?",
+          "question": "Jak poznáte důvěryhodnou zprávu na sociálních sítích?",
           "answers": [
             {
               "id": 0,
-              "answer": "Ano, je to běžný jev."
+              "answer": "Má hodně sdílení."
             },
             {
               "id": 1,
-              "answer": "Ne, jedná se o fenomén se kterým má problém jenom USA."
+              "answer": "Sdílel jí někdo, komu věřím."
             },
             {
               "id": 2,
-              "answer": "Pouze ojediněle."
+              "answer": "Na první pohled to může být těžké, musím si ověřit fakta."
             },
             {
               "id": 3,
-              "answer": "Sociální sítě v Česku Fake News blokují, takže se setkáváme pouze s ověřenými informacemi."
+              "answer": "Sociální sítě blokují Fake News, s takovou zprávou se nesetkám."
             }
           ],
-          "correctAnswer": 0
+          "correctAnswer": 2
         }
       ]
     },
@@ -182,42 +190,38 @@
       "questions": [
         {
           "id": 0,
-          "question": "Jak se dneska máš?",
+          "question": "Jak poznáte zabezpečenou webovou stránku?",
           "answers": [
             {
               "id": 0,
-              "answer": "Dobře"
+              "answer": "URL adresa začíná HTTPS a na okraji adresní řádky je znak zámku."
             },
             {
               "id": 1,
-              "answer": "Špatně"
+              "answer": "URL adresa začíná HTTP."
             },
             {
               "id": 2,
-              "answer": "Chce to vínko"
-            },
-            {
-              "id": 3,
-              "answer": "nevím"
+              "answer": "Najdu si ji v seznamu zabezpečených webových stránek."
             }
           ],
-          "correctAnswer": 3
+          "correctAnswer": 0
         },
         {
           "id": 1,
-          "question": "Kolik je 4 * 1?",
+          "question": "Které z následujících tvrzení je pravdivé?",
           "answers": [
             {
               "id": 0,
-              "answer": "6"
+              "answer": " "
             },
             {
               "id": 1,
-              "answer": "8"
+              "answer": "Reklama musí souviset s tématem článku. "
             },
             {
               "id": 2,
-              "answer": "4"
+              "answer": "Reklama v článku musí být vždy jasně a čitelně označená."
             },
             {
               "id": 3,
@@ -225,6 +229,75 @@
             }
           ],
           "correctAnswer": 2
+        },
+        {
+          "id": 2,
+          "question": "Při registraci do jakéhokoliv účtu je třeba vybrat správné a silné heslo. Jak jej sestavit, aby bylo opravdu silné?",
+          "answers": [
+            {
+              "id": 0,
+              "answer": "Zadat své rodné číslo."
+            },
+            {
+              "id": 1,
+              "answer": "Heslo by mělo být lehce zapamatovatelné."
+            },
+            {
+              "id": 2,
+              "answer": "Přidat do hesla jméno rodinného příslušníka."
+            },
+            {
+              "id": 3,
+              "answer": "Používat kombinaci čísel, malých a velkých písmen a znaků."
+            }
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "id": 3,
+          "question": "Zobrazení stránky v anonymním režimu:",
+          "answers": [
+            {
+              "id": 0,
+              "answer": "Zabrání tomu, aby někdo sledoval, jaké stránky navštěvuji."
+            },
+            {
+              "id": 1,
+              "answer": "Veškerá aktivita na stránkách není nijak dohledatelná."
+            },
+            {
+              "id": 2,
+              "answer": "Zabrání ukládání aktivity do místní paměti."
+            },
+            {
+              "id": 3,
+              "answer": "Zabrání zobrazení aktualní lokality."
+            }
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 4,
+          "question": "Značka „Heureka ověřeno zákazníky“ je udělena e-shopům",
+          "answers": [
+            {
+              "id": 0,
+              "answer": "E-shopu, která má na svých stránkách zmínku o starořeckém učenci Archimédésovi."
+            },
+            {
+              "id": 1,
+              "answer": "Pouze e-shopu, který si u Heureky zaplatí reklamu."
+            },
+            {
+              "id": 2,
+              "answer": "Každému e-shopu, který má nové zboží na českém trhu."
+            },
+            {
+              "id": 3,
+              "answer": "Které již mají nějaké zpětné vazby od zákazníků, lze dohledat jejich hodnocení a jedná se o prověřený e-shop."
+            }
+          ],
+          "correctAnswer": 3
         }
       ]
     }
