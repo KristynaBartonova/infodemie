@@ -53,4 +53,7 @@
     .introd {
       height: 3.3rem;
     }
+    .card-group {
+      max-width:85%;
+    }
   }
