@@ -163,12 +163,18 @@ const JSONdata = fetch('data.json')
   })
   .then(function (data) {
     console.log(data);
+
+    const aData = Object.entries(data);
+    console.log(aData);
   });
+
+// const aData = Object.entries(JSONdata);
+// console.log(aData);
 
 //const definované a vytažené skrze getElementById//
 
-const aData = Object.values(JSONdata);
-console.log(aData);
+// const aData = Object.entries(JSONdata);
+// console.log(aData);
 
 const answersElement = document.getElementById('answer-buttons');
 const startButton = document.getElementById('start-btn');
@@ -178,8 +184,8 @@ const quizContainer = document.getElementById('question-container');
 
 // upraví JSON data na původní strukturu, kterou vymazává prettier
 
-const questionsSetString = JSON.stringify(JSONdata);
-const questionsSet = JSON.parse(questionsSetString);
+// const questionsSetString = JSON.stringify(JSONdata);
+// const questionsSet = JSON.parse(questionsSetString);
 
 // určuje téma
 
