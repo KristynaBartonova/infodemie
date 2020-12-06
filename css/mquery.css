@@ -29,6 +29,7 @@
       display: flex;
       flex-direction: column;
     }
+    
     .card {
       width: 85%;
       height: 85%;
@@ -42,5 +43,14 @@
       justify-content: center;
       max-width: 60%;
       padding-bottom: 30px;
+    }
+    .introd {
+      height: 15.2rem;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .introd {
+      height: 3.3rem;
     }
   }
