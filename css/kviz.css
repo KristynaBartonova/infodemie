@@ -81,3 +81,8 @@
 .score {
   color: green;
 }
+
+#answer-buttons {
+  display:flex;
+  flex-direction: column;
+}
