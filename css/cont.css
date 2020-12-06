@@ -17,7 +17,7 @@ body > section {
   background-color: #f9efe9;
 }
 
-#fake-news,
+#fakenews,
 #nakup,
 #karuselNakup {
   background-color: white;
@@ -153,8 +153,8 @@ strong {
 }
 
 #karuselNakup {
-  width:100%;
-  padding-left:32%;
+  width: 100%;
+  padding-left: 32%;
   padding-right: 30%;
 }
 
